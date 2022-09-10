@@ -1,0 +1,8 @@
+.profile__card {
+  transition: background;
+}
+
+.profile__card:hover {
+  width: 400px;
+  height: 200px;
+}
