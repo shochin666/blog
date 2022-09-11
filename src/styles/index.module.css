@@ -1,8 +1,14 @@
-.profile__card {
-  transition: background;
-}
+/* .container {
+  margin-left: 400px;
+} */
 
-.profile__card:hover {
-  width: 400px;
-  height: 200px;
+/* :root宣言ができない */
+
+.github__button {
+  /* text-white hover:text-gray-100 text-2xl */
+  color: white;
+  transition: all 0.3s;
+}
+.github__button:hover {
+  color: gray;
 }
