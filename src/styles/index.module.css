@@ -4,6 +4,27 @@
 
 /* :root宣言ができない */
 
+.articles {
+  padding-bottom: 32px;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  margin: 0 auto;
+  height: 110px;
+  width: 350px;
+  transition: all 0.3s;
+}
+
+.articles:hover {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+    0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .github__button {
   /* text-white hover:text-gray-100 text-2xl */
   color: white;
@@ -11,4 +32,25 @@
 }
 .github__button:hover {
   color: gray;
+}
+
+/* text-blue-400 hover:text-blue-600 */
+.twitter__button {
+  color: rgb(113, 113, 255);
+  transition: all 0.3s;
+}
+
+.twitter__button:hover {
+  color: rgb(57, 57, 244);
+}
+
+.category__button {
+  /* bg-white px-2 py-1 */
+  background-color: white;
+  padding: 4px 8px;
+  transition: all 0.3s;
+}
+
+.category__button:hover {
+  color: rgb(140, 176, 255);
 }
