@@ -8,7 +8,6 @@ import { FiMail } from "react-icons/fi";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 
 import Icon from "../../public/Icon.jpeg";
-import ArticleDecoration from "../../public/ArticleDecoration.png";
 import styles from "../styles/index.module.css";
 
 export type hoge = {
@@ -23,7 +22,7 @@ type Props = {
 
 export const tmplist: hoge[] = [
   {
-    title: "[初心者向け]HTML・CSS作成からlive serverの立ち上げ",
+    title: "[初心者向け]HTML・CSS作成からLive Serverの立ち上げ",
     category: "HTML CSS",
     url: "/articles/1",
   },
@@ -37,7 +36,6 @@ export const tmplist: hoge[] = [
 
 export const Template = (props: Props) => {
   const { children } = props;
-  const router = useRouter();
 
   return (
     <div className="font-ubuntu">
@@ -46,9 +44,8 @@ export const Template = (props: Props) => {
           <div className="w-full fixed top-0 h-[80px] flex justify-between mb-4 px-[5%] bg-transparent z-10">
             <div className="mt-4">
               <a href="#">
-                <p className="font-bold text-2xl whitespace-nowrap bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-                  rev4 <br />
-                  　lab.
+                <p className="font-bold text-2xl whitespace-nowrap bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent ml-2 sm:ml-0">
+                  rev4 lab.
                 </p>
               </a>
             </div>
@@ -59,7 +56,7 @@ export const Template = (props: Props) => {
             </div>
           </div>
           <div className="flex mx-[20px]">
-            <div className="h-[1800px] w-[18%]">
+            <div className="h-[1800px] w-[18%] hidden sm:block">
               <div className="mt-[500px]">
                 <p>カテゴリ</p>
                 <div className="grid grid-cols-3 mt-4">
@@ -69,8 +66,8 @@ export const Template = (props: Props) => {
                 </div>
               </div>
             </div>
-            <div className="mt-[200px] w-[64%] shadow-lg">{children}</div>
-            <div className="w-[18%]">
+            <div className="w-full sm:w-[64%] shadow-lg">{children}</div>
+            <div className="w-[18%] hidden sm:block">
               <div className="mt-[140px] mx-4">
                 <h2 className="font-bold text-blue-400">注目の投稿</h2>
                 <div className="mx-4">
@@ -93,10 +90,10 @@ export const Template = (props: Props) => {
                   width={120}
                   className="rounded-full mx-auto"
                 />
-                <p className="text-[#79FFAF] font-bold text-2xl text-center">
+                <p className="text-[#79FFAF] mt-2 font-bold text-2xl text-center">
                   rev4
                 </p>
-                <p className="text-gray-400 text-sm mx-4 mt-6">
+                <p className="text-gray-400 text-sm mx-4 mt-4">
                   現在、物理学科に通う大学3年生。
                   <br />
                   PowerPlantを運営しており、フロントエンドをメインに個人開発しています。

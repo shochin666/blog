@@ -27,8 +27,8 @@ const Home: NextPage = () => {
   return (
     <Template>
       <>
-        <h1 className="text-gray-600 text-3xl ml-[20px]">読みもの</h1>
-        <hr className="ml-[20px] mb-4" />
+        <h1 className="text-gray-600 text-3xl mx-[20px]">読みもの</h1>
+        <hr className="mx-[20px] mb-4" />
         <div className="grid grid-cols-2 gap-[20px] h-min ml-[20px]">
           {addedlist.map((value) => {
             return (
