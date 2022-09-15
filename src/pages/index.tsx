@@ -15,79 +15,133 @@ const Home: NextPage = () => {
   const router = useRouter();
 
   // 初期値は揃える必要がある
-  const [maxShowContents, setMaxShowContents] = useState(6);
-  const [addedlist, setAddedlist] = useState<hoge[]>(tmplist.slice(0, 6));
+  const [maxShowContents, setMaxShowContents] = useState(4);
+  const [addedlist, setAddedlist] = useState<hoge[]>(tmplist.slice(0, 4));
   const [newShowList, setNewShowList] = useState<hoge[]>([]);
 
   const loadMoreArticles = () => {
-    setNewShowList(tmplist.slice(maxShowContents, maxShowContents + 3));
+    setNewShowList(tmplist.slice(maxShowContents, maxShowContents + 4));
     setAddedlist([...addedlist, ...newShowList]);
-    setMaxShowContents(maxShowContents + 3);
+    setMaxShowContents(maxShowContents + 4);
   };
   return (
     <Template>
       <>
-        <h1 className="text-gray-600 text-3xl mx-[20px]">読みもの</h1>
+        <h1 className="text-gray-600 text-3xl mx-[20px] mt-[80px] sm:mt-0">
+          読みもの
+        </h1>
         <hr className="mx-[20px] mb-4" />
-        <div className="grid grid-cols-2 gap-[20px] h-min ml-[20px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-[20px] h-min sm:ml-[20px]">
           {addedlist.map((value) => {
             return (
-              <button
-                className={styles.articles}
-                onClick={() => {
-                  router.push(value.url);
-                }}
-              >
-                <img
-                  src={ArticleDecoration.src}
-                  alt="デコレーション"
-                  height={80}
-                  width={80}
-                  className="absolute right-0 bottom-0"
-                />
-                <p className="text-[8px] text-gray-400 absolute mx-auto right-0 left-0 top-5">
-                  {value.category}
-                </p>
-                <p className="font-bold text-lg mx-auto right-0 left-0 top-10 absolute">
-                  {value.title}
-                </p>
-              </button>
+              <>
+                <div className="hidden sm:block">
+                  <button
+                    className={styles.articles}
+                    onClick={() => {
+                      router.push(value.url);
+                    }}
+                  >
+                    <img
+                      src={ArticleDecoration.src}
+                      alt="デコレーション"
+                      height={80}
+                      width={80}
+                      className="absolute right-0 bottom-0"
+                    />
+                    <p className="text-[8px] text-gray-400 absolute mx-auto right-0 left-0 top-5">
+                      {value.category}
+                    </p>
+                    <p className="font-bold text-lg mx-auto right-0 left-0 top-10 absolute">
+                      {value.title}
+                    </p>
+                  </button>
+                </div>
+                <div className="sm:hidden mx-auto">
+                  <button
+                    className="shadow-lg pb-8 text-center relative bg-white rounded-[8px] mx-auto h-[110px] w-[350px]"
+                    onClick={() => {
+                      router.push(value.url);
+                    }}
+                  >
+                    <img
+                      src={ArticleDecoration.src}
+                      alt="デコレーション"
+                      height={80}
+                      width={80}
+                      className="absolute right-0 bottom-0"
+                    />
+                    <p className="text-sm text-gray-400 absolute mx-auto right-0 left-0 top-5">
+                      {value.category}
+                    </p>
+                    <p className="font-bold text-lg mx-auto right-0 left-0 top-10 absolute">
+                      {value.title}
+                    </p>
+                  </button>
+                </div>
+              </>
             );
           })}
 
           {newShowList.map((value, i) => {
             return (
-              <button
-                className={styles.articles}
-                onClick={() => {
-                  router.push(value.url);
-                }}
-              >
-                <img
-                  src={ArticleDecoration.src}
-                  alt="デコレーション"
-                  height={80}
-                  width={80}
-                  className="absolute right-0 bottom-0"
-                />
-                <p className="text-[8px] text-gray-400 absolute mx-auto right-0 left-0 top-5">
-                  {value.category}
-                </p>
-                <p className="font-bold text-lg mx-auto right-0 left-0 top-10 absolute">
-                  {value.title}
-                </p>
-              </button>
+              <>
+                <div className="hidden sm:block">
+                  <button
+                    className={styles.articles}
+                    onClick={() => {
+                      router.push(value.url);
+                    }}
+                  >
+                    <img
+                      src={ArticleDecoration.src}
+                      alt="デコレーション"
+                      height={80}
+                      width={80}
+                      className="absolute right-0 bottom-0"
+                    />
+                    <p className="text-[8px] text-gray-400 absolute mx-auto right-0 left-0 top-5">
+                      {value.category}
+                    </p>
+                    <p className="font-bold text-lg mx-auto right-0 left-0 top-10 absolute">
+                      {value.title}
+                    </p>
+                  </button>
+                </div>
+                <div className="sm:hidden mx-auto">
+                  <button
+                    className="shadow-lg pb-8 text-center relative bg-white rounded-[8px] h-[110px] w-[350px]"
+                    onClick={() => {
+                      router.push(value.url);
+                    }}
+                  >
+                    <img
+                      src={ArticleDecoration.src}
+                      alt="デコレーション"
+                      height={80}
+                      width={80}
+                      className="absolute right-0 bottom-0"
+                    />
+                    <p className="text-sm text-gray-400 absolute mx-auto right-0 left-0 top-5">
+                      {value.category}
+                    </p>
+                    <p className="font-bold text-lg mx-auto right-0 left-0 top-10 absolute">
+                      {value.title}
+                    </p>
+                  </button>
+                </div>
+              </>
             );
           })}
         </div>
         {addedlist.length == tmplist.length && newShowList.length == 0 ? (
-          <p></p>
+          <div className="my-[72px]"></div>
         ) : (
           <button
             onClick={() => {
               loadMoreArticles();
             }}
-            className="block mx-auto"
+            className="block mx-auto my-6"
           >
             read more
           </button>

@@ -24,7 +24,7 @@ const Article: NextPage = () => {
   return (
     <Template>
       <>
-        <div className="relative h-[200px]">
+        <div className="relative h-[200px] mt-[60px]">
           <h1 className="absolute text-2xl sm:text-3xl text-gray-600 sm:font-bold z-10 top-20 left-5">
             [初心者向け]HTML・CSS作成からLive Serverの立ち上げ
           </h1>
@@ -39,11 +39,19 @@ const Article: NextPage = () => {
             className="absolute right-0 z-0"
           />
         </div>
-        <h2 className="text-gray-600 text-3xl mx-[20px]">環境構築</h2>
+        <h2 className="text-gray-600 text-2xl sm:text-3xl mx-[20px]">
+          環境構築
+        </h2>
         <hr className="mx-[20px] mb-4" />
         <div className="w-[90%] mx-auto text-gray-600">
           <div className="flex sm:-ml-4 mt-8 mb-4">
-            <img src={Arrow.src} alt="題目" width={28} height={28} />
+            <img
+              src={Arrow.src}
+              alt="題目"
+              width={28}
+              height={28}
+              className="my-auto"
+            />
             <h3 className="text-lg text-sky-500 my-auto ml-2">
               vscodeのインストール
             </h3>
@@ -85,7 +93,13 @@ const Article: NextPage = () => {
             ダウンロードしたパッケージを解凍してデスクトップにアプリを配置しておきましょう。
           </p>
           <div className="flex sm:-ml-4 mt-20 mb-4">
-            <img src={Arrow.src} alt="題目" width={28} height={28} />
+            <img
+              src={Arrow.src}
+              alt="題目"
+              width={28}
+              height={28}
+              className="my-auto"
+            />
             <h3 className="text-lg text-sky-500 my-auto ml-2">
               開発用ディレクトリ(フォルダ)の作成
             </h3>
@@ -138,11 +152,19 @@ const Article: NextPage = () => {
             </div>
           </div>
         </div>
-        <h2 className="text-gray-600 text-3xl mx-[20px] mt-8">コードを書く</h2>
+        <h2 className="text-gray-600 text-2xl sm:text-3xl mx-[20px] mt-8">
+          コードを書く
+        </h2>
         <hr className="mx-[20px] mb-4" />
-        <div className="w-[90%] mx-auto text-gray-600 mb-32">
+        <div className="w-[90%] mx-auto text-gray-600 mb-20">
           <div className="flex sm:-ml-4 mt-8 mb-4">
-            <img src={Arrow.src} alt="題目" width={28} height={28} />
+            <img
+              src={Arrow.src}
+              alt="題目"
+              width={28}
+              height={28}
+              className="my-auto"
+            />
             <h3 className="text-lg text-sky-500 my-auto ml-2">
               Live Serverのインストール
             </h3>
@@ -198,7 +220,13 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-4">
-            <img src={Arrow.src} alt="題目" width={28} height={28} />
+            <img
+              src={Arrow.src}
+              alt="題目"
+              width={28}
+              height={28}
+              className="my-auto"
+            />
             <h3 className="text-lg text-sky-500 my-auto ml-2">
               vscodeを使ってHTMLファイルを編集
             </h3>
@@ -284,7 +312,13 @@ const Article: NextPage = () => {
             className="shadow-md mx-auto mt-12 mb-20"
           />
           <div className="flex sm:-ml-4 mt-24 mb-4">
-            <img src={Arrow.src} alt="題目" width={28} height={28} />
+            <img
+              src={Arrow.src}
+              alt="題目"
+              width={28}
+              height={28}
+              className="my-auto"
+            />
             <h3 className="text-lg text-sky-500 my-auto ml-2">
               CSSを当ててデザインを整える
             </h3>
@@ -303,7 +337,7 @@ const Article: NextPage = () => {
             className="my-12 mx-auto"
           />
           <p>
-            さらに既に書いたh2タグにclass属性を付与してあげます。このクラス名と同じ名前でstyles.cssに記述したスタイルがh2タグに当たります。ここでは
+            さらに既に書いたh1タグにclass属性を付与してあげます。このクラス名と同じ名前でstyles.cssに記述したスタイルがh1タグに当たります。ここでは
             <span className="text-blue-400">" message "</span>
             というクラス名をつけてみましょう。
           </p>
