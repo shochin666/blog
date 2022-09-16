@@ -25,7 +25,11 @@ export const tmplist: hoge[] = [
     category: "HTML CSS",
     url: "/articles/1",
   },
-  { title: "kae2", category: "雑談", url: "/articles/1" },
+  {
+    title: "HTML・CSSをさらに深く理解する",
+    category: "HTML CSS",
+    url: "/articles/2",
+  },
   { title: "kae3", category: "雑談", url: "/articles/1" },
   { title: "kae4", category: "雑談", url: "/articles/1" },
   { title: "kae5", category: "雑談", url: "/articles/1" },
@@ -56,16 +60,16 @@ export const Template = (props: Props) => {
           </div>
           <div className="flex flex-col sm:flex-row mx-[20px]">
             <div className="h-[1800px] w-[18%] hidden sm:block">
-              <div className="mt-[500px]">
+              {/* <div className="mt-[500px]">
                 <p>カテゴリ</p>
                 <div className="grid grid-cols-3 mt-4">
                   <button className={styles.category__button}>React</button>
                   <button className={styles.category__button}>React</button>
                   <button className={styles.category__button}>React</button>
                 </div>
-              </div>
+              </div> */}
             </div>
-            <div className="w-full sm:w-[64%] shadow-lg">{children}</div>
+            <div className="w-full sm:w-[64%] sm:shadow-md">{children}</div>
             <div className="sm:hidden bg-gray-900 rounded-lg py-8 flex flex-col shadow-lg mt-8 mb-14">
               <img
                 src={Icon.src}

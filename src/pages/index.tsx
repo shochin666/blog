@@ -27,11 +27,11 @@ const Home: NextPage = () => {
   return (
     <Template>
       <>
-        <h1 className="text-gray-600 text-3xl mx-[20px] mt-[80px] sm:mt-0">
-          読みもの
+        <h1 className="text-gray-600 text-3xl mx-[20px] mt-[80px] sm:mt-28">
+          Tech
         </h1>
-        <hr className="mx-[20px] mb-4" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-[20px] h-min sm:ml-[20px]">
+        <hr className="mx-[20px] sm:mb-12" />
+        <div className="grid grid-cols-1 gap-[20px] h-min text-center">
           {addedlist.map((value) => {
             return (
               <>
@@ -141,7 +141,7 @@ const Home: NextPage = () => {
             onClick={() => {
               loadMoreArticles();
             }}
-            className="block mx-auto my-6"
+            className="block mx-auto my-6 text-blue-500"
           >
             read more
           </button>

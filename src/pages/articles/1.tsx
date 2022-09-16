@@ -19,6 +19,7 @@ import Img8 from "../../../public/article1/img8.png";
 import Img9 from "../../../public/article1/img9.png";
 import Img10 from "../../../public/article1/img10.png";
 import Img11 from "../../../public/article1/img11.png";
+import { Return } from "components/return";
 
 const Article: NextPage = () => {
   return (
@@ -156,7 +157,7 @@ const Article: NextPage = () => {
           コードを書く
         </h2>
         <hr className="mx-[20px] mb-4" />
-        <div className="w-[90%] mx-auto text-gray-600 mb-20">
+        <div className="w-[90%] mx-auto text-gray-600 mb-32">
           <div className="flex sm:-ml-4 mt-8 mb-4">
             <img
               src={Arrow.src}
@@ -402,6 +403,7 @@ const Article: NextPage = () => {
           <p className="text-[#00c34e] text-3xl font-bold text-center">
             Success!
           </p>
+          <Return />
         </div>
       </>
     </Template>
