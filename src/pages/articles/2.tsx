@@ -1,38 +1,55 @@
 import { NextPage } from "next";
 
-import { Template } from "components/template";
-import { Return } from "components/return";
+import { Link as Scroll } from "react-scroll";
 
-import { TbArrowBigRightLine, TbArrowBigDownLine } from "react-icons/tb";
-import { AiOutlineStop } from "react-icons/ai";
-import { BsArrowReturnLeft } from "react-icons/bs";
+import { Template } from "../../components/Template";
+import { ReturnButton } from "components/ReturnButton";
 
 import LinkIcon from "../../../public/linkIcon.png";
 import TitleBackground from "../../../public/titleBackground.png";
 import Arrow from "../../../public/Arrow.png";
-import Success from "../../../public/article1/undraw_game_day_ucx9.png";
-import Img1 from "../../../public/article1/img1.png";
-import Img2 from "../../../public/article1/img2.png";
-import Img3 from "../../../public/article1/img3.png";
-import Img4 from "../../../public/article1/img4.png";
-import Img5 from "../../../public/article1/img5.png";
-import Img6 from "../../../public/article1/img6.png";
-import Img7 from "../../../public/article1/img7.png";
-import Img8 from "../../../public/article1/img8.png";
-import Img9 from "../../../public/article1/img9.png";
-import Img10 from "../../../public/article1/img10.png";
-import Img11 from "../../../public/article1/img11.png";
+import { useRef } from "react";
+import { useOffsetTop } from "hooks/useOffsetTop";
 
 const Article: NextPage = () => {
+  const content1Ref = useRef(null);
+  const content2Ref = useRef(null);
+  const content3Ref = useRef(null);
+  const content4Ref = useRef(null);
+  const content5Ref = useRef(null);
+  const content1SectionOffset = useOffsetTop(content1Ref);
+  const content2SectionOffset = useOffsetTop(content2Ref);
+  const content3SectionOffset = useOffsetTop(content3Ref);
+  const content4SectionOffset = useOffsetTop(content4Ref);
+  const content5SectionOffset = useOffsetTop(content5Ref);
   return (
     <Template>
       <>
+        <nav className="fixed h-[360px] right-[16px] top-12 z-20 flex-col mx-auto py-2 w-20 sm:w-60 gap-4 rounded-lg px-4 hidden sm:flex">
+          <p className="font-bold text-gray-500">目次</p>
+          <Scroll
+            to="content1"
+            smooth={true}
+            offset={-80}
+            className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
+          >
+            1. HTML
+          </Scroll>
+          <Scroll
+            to="content2"
+            smooth={true}
+            offset={-80}
+            className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
+          >
+            2. CSS
+          </Scroll>
+        </nav>
         <div className="relative h-[200px] mt-[60px]">
           <h1 className="absolute text-2xl sm:text-3xl text-gray-600 sm:font-bold z-10 top-20 left-5">
             HTML・CSSをさらに深く理解する
           </h1>
           <p className="absolute text-right text-gray-400 z-10 right-6 top-8">
-            更新日時 : 2022/9/15
+            更新日時 : 2022/9/19
           </p>
           <img
             src={TitleBackground.src}
@@ -69,7 +86,13 @@ const Article: NextPage = () => {
               height={28}
               className="my-auto"
             />
-            <h3 className="text-lg text-sky-500 my-auto ml-2">HTML</h3>
+            <h3
+              ref={content1Ref}
+              id="content1"
+              className="text-lg text-sky-500 my-auto ml-2"
+            >
+              HTML
+            </h3>
           </div>
           <div className="flex h-10 my-8">
             <img
@@ -190,7 +213,13 @@ const Article: NextPage = () => {
               height={28}
               className="my-auto"
             />
-            <h3 className="text-lg text-sky-500 my-auto ml-2">CSS</h3>
+            <h3
+              ref={content2Ref}
+              id="content2"
+              className="text-lg text-sky-500 my-auto ml-2"
+            >
+              CSS
+            </h3>
           </div>
           <div className="flex h-10 my-8">
             <img
@@ -305,7 +334,7 @@ const Article: NextPage = () => {
             <br />
             更なるスキルアップのために頑張っていきましょう！お疲れ様でした！
           </p>
-          <Return />
+          <ReturnButton />
         </div>
       </>
     </Template>

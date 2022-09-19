@@ -1,6 +1,9 @@
 import { NextPage } from "next";
-import { Template } from "components/template";
+import { useRef } from "react";
+import { Template } from "../../components/Template";
+import { useOffsetTop } from "hooks/useOffsetTop";
 
+import { Link as Scroll } from "react-scroll";
 import { TbArrowBigRightLine, TbArrowBigDownLine } from "react-icons/tb";
 import { AiOutlineStop } from "react-icons/ai";
 
@@ -19,12 +22,65 @@ import Img8 from "../../../public/article1/img8.png";
 import Img9 from "../../../public/article1/img9.png";
 import Img10 from "../../../public/article1/img10.png";
 import Img11 from "../../../public/article1/img11.png";
-import { Return } from "components/return";
+import { ReturnButton } from "components/ReturnButton";
 
 const Article: NextPage = () => {
+  const content1Ref = useRef(null);
+  const content2Ref = useRef(null);
+  const content3Ref = useRef(null);
+  const content4Ref = useRef(null);
+  const content5Ref = useRef(null);
+  const content1SectionOffset = useOffsetTop(content1Ref);
+  const content2SectionOffset = useOffsetTop(content2Ref);
+  const content3SectionOffset = useOffsetTop(content3Ref);
+  const content4SectionOffset = useOffsetTop(content4Ref);
+  const content5SectionOffset = useOffsetTop(content5Ref);
   return (
     <Template>
       <>
+        <nav className="fixed h-[360px] right-[16px] top-12 z-20 flex flex-col mx-auto py-2 w-60 gap-4 rounded-lg px-4">
+          <p className="font-bold text-gray-500">目次</p>
+          <Scroll
+            to="content1"
+            smooth={true}
+            offset={-80}
+            className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
+          >
+            1. vscodeのインストール
+          </Scroll>
+          <Scroll
+            to="content2"
+            smooth={true}
+            offset={-80}
+            className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
+          >
+            2. 開発用ディレクトリ(フォルダ)の作成
+          </Scroll>
+          <Scroll
+            to="content3"
+            smooth={true}
+            offset={-80}
+            className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
+          >
+            3. Live Serverのインストール
+          </Scroll>
+          <Scroll
+            to="content4"
+            smooth={true}
+            offset={-80}
+            className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
+          >
+            4. vscodeを使ってHTMLファイルを編集
+          </Scroll>
+          <Scroll
+            to="content5"
+            smooth={true}
+            offset={-80}
+            className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
+          >
+            5. CSSを当ててデザインを整える
+          </Scroll>
+        </nav>
         <div className="relative h-[200px] mt-[60px]">
           <h1 className="absolute text-2xl sm:text-3xl text-gray-600 sm:font-bold z-10 top-20 left-5">
             [初心者向け]HTML・CSS作成からLive Serverの立ち上げ
@@ -40,6 +96,51 @@ const Article: NextPage = () => {
             className="absolute right-0 z-0"
           />
         </div>
+        {/* <h2 className="text-gray-600 text-2xl sm:text-3xl mx-[20px]">もくじ</h2>
+        <hr className="mx-[20px] mb-4" /> */}
+        {/* <nav className="flex flex-col mx-auto w-min gap-4 border-4 border-green-300 rounded-lg px-12 py-4 mt-12 mb-24 shadow-xl">
+          <Scroll
+            to="content1"
+            smooth={true}
+            offset={-80}
+            className="hover:cursor-pointer whitespace-nowrap w-min text-gray-500 hover:text-blue-400"
+          >
+            1. vscodeのインストール
+          </Scroll>
+          <Scroll
+            to="content2"
+            smooth={true}
+            offset={-80}
+            className="hover:cursor-pointer whitespace-nowrap w-min text-gray-500 hover:text-blue-400"
+          >
+            2. 開発用ディレクトリ(フォルダ)の作成
+          </Scroll>
+          <Scroll
+            to="content3"
+            smooth={true}
+            offset={-80}
+            className="hover:cursor-pointer whitespace-nowrap w-min text-gray-500 hover:text-blue-400"
+          >
+            3. Live Serverのインストール
+          </Scroll>
+          <Scroll
+            to="content4"
+            smooth={true}
+            offset={-80}
+            className="hover:cursor-pointer whitespace-nowrap w-min text-gray-500 hover:text-blue-400"
+          >
+            4. vscodeを使ってHTMLファイルを編集
+          </Scroll>
+          <Scroll
+            to="content5"
+            smooth={true}
+            offset={-80}
+            className="hover:cursor-pointer whitespace-nowrap w-min text-gray-500 hover:text-blue-400"
+          >
+            5. CSSを当ててデザインを整える
+          </Scroll>
+        </nav> */}
+
         <h2 className="text-gray-600 text-2xl sm:text-3xl mx-[20px]">
           環境構築
         </h2>
@@ -53,7 +154,11 @@ const Article: NextPage = () => {
               height={28}
               className="my-auto"
             />
-            <h3 className="text-lg text-sky-500 my-auto ml-2">
+            <h3
+              ref={content1Ref}
+              id="content1"
+              className="text-lg text-sky-500 my-auto ml-2"
+            >
               vscodeのインストール
             </h3>
           </div>
@@ -101,7 +206,11 @@ const Article: NextPage = () => {
               height={28}
               className="my-auto"
             />
-            <h3 className="text-lg text-sky-500 my-auto ml-2">
+            <h3
+              ref={content2Ref}
+              id="content2"
+              className="text-lg text-sky-500 my-auto ml-2"
+            >
               開発用ディレクトリ(フォルダ)の作成
             </h3>
           </div>
@@ -166,7 +275,11 @@ const Article: NextPage = () => {
               height={28}
               className="my-auto"
             />
-            <h3 className="text-lg text-sky-500 my-auto ml-2">
+            <h3
+              ref={content3Ref}
+              id="content3"
+              className="text-lg text-sky-500 my-auto ml-2"
+            >
               Live Serverのインストール
             </h3>
           </div>
@@ -228,7 +341,11 @@ const Article: NextPage = () => {
               height={28}
               className="my-auto"
             />
-            <h3 className="text-lg text-sky-500 my-auto ml-2">
+            <h3
+              ref={content4Ref}
+              id="content4"
+              className="text-lg text-sky-500 my-auto ml-2"
+            >
               vscodeを使ってHTMLファイルを編集
             </h3>
           </div>
@@ -320,7 +437,11 @@ const Article: NextPage = () => {
               height={28}
               className="my-auto"
             />
-            <h3 className="text-lg text-sky-500 my-auto ml-2">
+            <h3
+              ref={content5Ref}
+              id="content5"
+              className="text-lg text-sky-500 my-auto ml-2"
+            >
               CSSを当ててデザインを整える
             </h3>
           </div>
@@ -403,7 +524,7 @@ const Article: NextPage = () => {
           <p className="text-[#00c34e] text-3xl font-bold text-center">
             Success!
           </p>
-          <Return />
+          <ReturnButton />
         </div>
       </>
     </Template>

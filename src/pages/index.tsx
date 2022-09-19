@@ -2,10 +2,10 @@ import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-import { Template } from "../components/template";
+import { Template } from "../components/Template";
 import ArticleDecoration from "../../public/ArticleDecoration.png";
 import styles from "../styles/index.module.css";
-import { hoge, tmplist } from "../components/template";
+import { hoge, tmplist } from "../components/Template";
 // import Head from "next/head";
 // import Image from "next/image";
 // import styles from "../styles/Home.module.css";

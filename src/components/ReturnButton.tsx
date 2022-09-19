@@ -1,6 +1,6 @@
 import { BsArrowReturnLeft } from "react-icons/bs";
 
-export const Return = () => {
+export const ReturnButton = () => {
   return (
     <>
       <div className="relative">

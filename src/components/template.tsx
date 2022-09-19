@@ -1,9 +1,12 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { ReactElement, ReactNode, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 import { AiFillGithub } from "react-icons/ai";
-import { BsTwitter } from "react-icons/bs";
+import { BsSnow2, BsTwitter } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
+import { GiSnowman } from "react-icons/gi";
 
 import Icon from "../../public/Icon.jpeg";
 import Logo from "../../public/logo.png";
@@ -42,25 +45,466 @@ export const Template = (props: Props) => {
   const { children } = props;
 
   return (
-    <div className="font-ubuntu">
-      <div className="w-full">
+    <>
+      <Head>
+        <title>rev4 lab.</title>
+        <meta name="description" content="rev4の日常ブログ" />
+        <meta
+          name="keyword"
+          content="rev4, ブログ, HTML, CSS, react, プログラミング, 初心者"
+        />
+        <meta property="twitter:title" content="rev4 lab." />
+        <meta name="twitter:createor" content="rev4" />
+        {/* <meta
+          property="twitter:image"
+          content="https://powerplant-f5557.web.app/TwitterLogo.png"
+        /> */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:description" content="rev4の日常ブログ" />
+        {/* <link rel="canonical" href="https://powerplant-f5557.web.app/" /> */}
+        <link rel="icon" href={Logo.src} />
+      </Head>
+
+      {/* モバイル版 */}
+      <div className="font-ubuntu">
         <div className="w-full">
-          <div className="w-full fixed top-0 h-[60px] flex justify-between mb-4 px-[5%] bg-white z-20">
-            <div className="mt-4">
-              <a href="/" className="flex">
-                <img src={Logo.src} alt="背景" height={40} width={40} />
-                <p className="font-bold text-2xl whitespace-nowrap bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent ml-2 sm:ml-4">
-                  rev4 lab.
-                </p>
-              </a>
+          <div className="w-full">
+            <div className="w-full fixed top-0 h-[60px] flex justify-between mb-4 px-[5%] bg-white z-20">
+              <div className="mt-4">
+                <a href="/" className="flex">
+                  <img src={Logo.src} alt="背景" height={40} width={40} />
+                  <p className="font-bold text-2xl whitespace-nowrap bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent ml-2 sm:ml-4">
+                    rev4 lab.
+                  </p>
+                </a>
+              </div>
+              <div className="flex h-2 mr-32 sm:h-6 -mt-20 sm:mt-0">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10,
+                    repeat: Infinity,
+                    delay: 1.6,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 12,
+                    repeat: Infinity,
+                    delay: 0.8,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[9px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10.5,
+                    repeat: Infinity,
+                    delay: 2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[20px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <GiSnowman className="text-[32px] text-sky-300 mt-[90px]" />
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 9.4,
+                    repeat: Infinity,
+                    delay: 2.2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[10px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10.8,
+                    repeat: Infinity,
+                    delay: 1.2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[8px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 11,
+                    repeat: Infinity,
+                    delay: 2.2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[10px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 9.8,
+                    repeat: Infinity,
+                    delay: 0.6,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[6px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10,
+                    repeat: Infinity,
+                    delay: 2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[14px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10.2,
+                    repeat: Infinity,
+                    delay: 2.2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[10px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10.6,
+                    repeat: Infinity,
+                    delay: 1.2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[10px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 8.8,
+                    repeat: Infinity,
+                    delay: 2.8,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[16px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10,
+                    repeat: Infinity,
+                    delay: 1.6,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 12,
+                    repeat: Infinity,
+                    delay: 0.8,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[9px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10.5,
+                    repeat: Infinity,
+                    delay: 2.7,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[20px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 9.4,
+                    repeat: Infinity,
+                    delay: 2.2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[10px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10.8,
+                    repeat: Infinity,
+                    delay: 2.2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[8px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 11,
+                    repeat: Infinity,
+                    delay: 2.2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[10px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 9.8,
+                    repeat: Infinity,
+                    delay: 0.6,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[6px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 12,
+                    repeat: Infinity,
+                    delay: 2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[14px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10.2,
+                    repeat: Infinity,
+                    delay: 2.2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[10px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10.6,
+                    repeat: Infinity,
+                    delay: 1.8,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[10px]"
+                >
+                  <BsSnow2 />
+                </motion.div>{" "}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10.5,
+                    repeat: Infinity,
+                    delay: 2.8,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[20px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 9.4,
+                    repeat: Infinity,
+                    delay: 2.2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[10px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10.2,
+                    repeat: Infinity,
+                    delay: 2.5,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[8px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 11,
+                    repeat: Infinity,
+                    delay: 2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[13px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10.3,
+                    repeat: Infinity,
+                    delay: 2.1,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[8px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 12,
+                    repeat: Infinity,
+                    delay: 2.1,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[14px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10,
+                    repeat: Infinity,
+                    delay: 2.2,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[13px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 10.6,
+                    repeat: Infinity,
+                    delay: 1,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[10px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    ease: "easeOut",
+                    duration: 8.8,
+                    repeat: Infinity,
+                    delay: 2.4,
+                  }}
+                  animate={{ opacity: 0.8, y: [0, 160] }}
+                  exit={{ opacity: 0 }}
+                  className="text-sky-300 text-[16px]"
+                >
+                  <BsSnow2 />
+                </motion.div>
+              </div>
             </div>
-            <div>
-              <button className="hidden"></button>
-            </div>
-          </div>
-          <div className="flex flex-col sm:flex-row mx-[20px]">
-            <div className="h-[1800px] w-[18%] hidden sm:block">
-              {/* <div className="mt-[500px]">
+            <div className="flex flex-col sm:flex-row mx-[20px]">
+              <div className="h-[1800px] w-[18%] hidden sm:block">
+                {/* <div className="mt-[500px]">
                 <p>カテゴリ</p>
                 <div className="grid grid-cols-3 mt-4">
                   <button className={styles.category__button}>React</button>
@@ -68,53 +512,9 @@ export const Template = (props: Props) => {
                   <button className={styles.category__button}>React</button>
                 </div>
               </div> */}
-            </div>
-            <div className="w-full sm:w-[64%] sm:shadow-md">{children}</div>
-            <div className="sm:hidden bg-gray-900 rounded-lg py-8 flex flex-col shadow-lg mt-8 mb-14">
-              <img
-                src={Icon.src}
-                alt="アイコン"
-                height={120}
-                width={120}
-                className="rounded-full mx-auto"
-              />
-              <p className="text-[#79FFAF] mt-2 font-bold text-2xl text-center">
-                rev4
-              </p>
-              <p className="text-gray-400 text-sm mx-4 mt-4">
-                物理学科に通う大学3年生。
-                <br />
-                フロントエンドをメインに個人開発しています。
-                <br />
-              </p>
-              <div className="flex justify-around text-white text-xl mt-4">
-                <a href="#" className={styles.github__button}>
-                  <AiFillGithub className="text-2xl" />
-                </a>
-                <a href="#" className={styles.twitter__button}>
-                  <BsTwitter />
-                </a>
-                <a href="#" className={styles.twitter__button}>
-                  <FiMail />
-                </a>
               </div>
-            </div>
-            <div className="w-[18%] hidden sm:block">
-              <div className="mt-[140px] mx-4">
-                <h2 className="font-bold text-blue-400">注目の投稿</h2>
-                <div className="mx-4">
-                  {tmplist.slice(0, 3).map((value) => {
-                    return (
-                      <>
-                        <a href="#" className="hover:underline">
-                          <p>{value.title}</p>
-                        </a>
-                      </>
-                    );
-                  })}
-                </div>
-              </div>
-              <div className="fixed right-[16px] bg-gray-900 rounded-lg w-[240px] flex flex-col py-[20px] shadow-lg bottom-[40px]">
+              <div className="w-full sm:w-[64%] sm:shadow-md">{children}</div>
+              <div className="sm:hidden bg-gray-900 rounded-lg py-8 flex flex-col shadow-lg mt-8 mb-14">
                 <img
                   src={Icon.src}
                   alt="アイコン"
@@ -126,9 +526,9 @@ export const Template = (props: Props) => {
                   rev4
                 </p>
                 <p className="text-gray-400 text-sm mx-4 mt-4">
-                  現在、物理学科に通う大学3年生。
+                  物理学科に通う大学3年生。
                   <br />
-                  PowerPlantを運営しており、フロントエンドをメインに個人開発しています。
+                  フロントエンドをメインに個人開発しています。
                   <br />
                 </p>
                 <div className="flex justify-around text-white text-xl mt-4">
@@ -143,10 +543,57 @@ export const Template = (props: Props) => {
                   </a>
                 </div>
               </div>
+
+              {/* PC版 */}
+              <div className="w-[18%] hidden sm:block">
+                {/* <div className="mt-[140px] mx-4">
+                  <h2 className="font-bold text-blue-400">注目の投稿</h2>
+                  <div className="mx-4">
+                    {tmplist.slice(0, 3).map((value) => {
+                      return (
+                        <>
+                          <a href="#" className="hover:underline">
+                            <p>{value.title}</p>
+                          </a>
+                        </>
+                      );
+                    })}
+                  </div>
+                </div> */}
+                <div className="fixed right-[16px] bg-gray-900 rounded-lg w-[16%] flex flex-col py-[20px] shadow-lg bottom-[40px]">
+                  <img
+                    src={Icon.src}
+                    alt="アイコン"
+                    height={120}
+                    width={120}
+                    className="rounded-full mx-auto"
+                  />
+                  <p className="text-[#79FFAF] mt-2 font-bold text-2xl text-center">
+                    rev4
+                  </p>
+                  <p className="text-gray-400 text-sm mx-4 mt-4">
+                    現在、物理学科に通う大学3年生。
+                    <br />
+                    PowerPlantを運営しており、フロントエンドをメインに個人開発しています。
+                    <br />
+                  </p>
+                  <div className="flex justify-around text-white text-xl mt-4">
+                    <a href="#" className={styles.github__button}>
+                      <AiFillGithub className="text-2xl" />
+                    </a>
+                    <a href="#" className={styles.twitter__button}>
+                      <BsTwitter />
+                    </a>
+                    <a href="#" className={styles.twitter__button}>
+                      <FiMail />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };

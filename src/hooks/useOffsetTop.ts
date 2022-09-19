@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 // 呼び出し元でRefをidで取得して引数に当てる
-export function useOffsetTop(ref?: React.RefObject<HTMLElement>) {
+export const useOffsetTop = (ref?: React.RefObject<HTMLElement>) => {
   const [viewportTop, setViewportTop] = useState<number>();
   const [pageOffsetTop, setPageOffsetTop] = useState<number>();
 
@@ -23,4 +23,4 @@ export function useOffsetTop(ref?: React.RefObject<HTMLElement>) {
   }, [handler]);
 
   return { viewportTop, pageOffsetTop };
-}
+};
