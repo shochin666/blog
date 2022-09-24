@@ -33,7 +33,11 @@ export const tmplist: hoge[] = [
     category: "HTML CSS",
     url: "/articles/2",
   },
-  { title: "kae3", category: "雑談", url: "/articles/1" },
+  {
+    title: "これだけは知っておいてほしい！マークダウン記法まとめ",
+    category: "Markdown",
+    url: "/articles/3",
+  },
   { title: "kae4", category: "雑談", url: "/articles/1" },
   { title: "kae5", category: "雑談", url: "/articles/1" },
   { title: "kae6", category: "雑談", url: "/articles/1" },

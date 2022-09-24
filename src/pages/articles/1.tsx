@@ -38,7 +38,7 @@ const Article: NextPage = () => {
   return (
     <Template>
       <>
-        <nav className="fixed h-[360px] right-[16px] top-12 z-20 flex flex-col mx-auto py-2 w-60 gap-4 rounded-lg px-4">
+        <nav className="fixed h-[360px] right-[16px] top-12 z-20 flex-col mx-auto py-2 w-60 gap-4 rounded-lg px-4 hidden sm:flex">
           <p className="font-bold text-gray-500">目次</p>
           <Scroll
             to="content1"
@@ -86,7 +86,7 @@ const Article: NextPage = () => {
             [初心者向け]HTML・CSS作成からLive Serverの立ち上げ
           </h1>
           <p className="absolute text-right text-gray-400 z-10 right-6 top-8">
-            更新日時 : 2022/9/15
+            更新日 : 2022/9/15
           </p>
           <img
             src={TitleBackground.src}

@@ -49,7 +49,7 @@ const Article: NextPage = () => {
             HTML・CSSをさらに深く理解する
           </h1>
           <p className="absolute text-right text-gray-400 z-10 right-6 top-8">
-            更新日時 : 2022/9/19
+            更新日 : 2022/9/19
           </p>
           <img
             src={TitleBackground.src}
