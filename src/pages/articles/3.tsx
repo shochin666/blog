@@ -45,20 +45,12 @@ const Article: NextPage = () => {
             1. 見出し
           </Scroll>
           <Scroll
-            to="content2"
-            smooth={true}
-            offset={-80}
-            className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
-          >
-            2. コードの記述
-          </Scroll>
-          <Scroll
             to="content3"
             smooth={true}
             offset={-80}
             className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
           >
-            3. リンクの埋め込み
+            2. リンクの埋め込み
           </Scroll>
           <Scroll
             to="content4"
@@ -66,7 +58,7 @@ const Article: NextPage = () => {
             offset={-80}
             className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
           >
-            4. 画像の貼り付け
+            3. 画像の貼り付け
           </Scroll>
           <Scroll
             to="content5"
@@ -74,7 +66,7 @@ const Article: NextPage = () => {
             offset={-80}
             className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
           >
-            5. 引用
+            4. 引用
           </Scroll>
           <Scroll
             to="content6"
@@ -82,7 +74,7 @@ const Article: NextPage = () => {
             offset={-80}
             className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
           >
-            6. フォントスタイル
+            5. フォントスタイル
           </Scroll>
           <Scroll
             to="content7"
@@ -90,7 +82,15 @@ const Article: NextPage = () => {
             offset={-80}
             className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
           >
-            7. 箇条書き
+            6. 箇条書き
+          </Scroll>
+          <Scroll
+            to="content2"
+            smooth={true}
+            offset={-80}
+            className="hover:cursor-pointer text-gray-500 hover:text-blue-400"
+          >
+            7. コードの記述
           </Scroll>
           <Scroll
             to="content8"
@@ -127,7 +127,9 @@ const Article: NextPage = () => {
             <br />
             あまりしっかりと練習することがないマークダウンの記法をあらためて本気で勉強しよう！もう少し伝わりやすく報告するために記法を学びたい！と思う方に向けて記事を書きました。
             <br />
-            自分も今回の記事を書いていくうちに知らなかったことや発見がたくさんあり勉強になりました。ぜひ今回を機に勉強してみましょう！
+            自分も今回の記事を書いていくうちに知らなかったことや発見がたくさんあり勉強になりました。
+            <br />
+            ぜひ、これを機に勉強してみましょう！
           </p>
         </div>
         <h2 className="text-gray-600 text-2xl sm:text-3xl mx-[20px]">
@@ -203,98 +205,6 @@ const Article: NextPage = () => {
                 <span className="text-sm my-auto ml-4 rounded-md py-2 px-4 w-min whitespace-nowrap shadow-inner">
                   見出し小
                 </span>
-              </div>
-            </div>
-          </div>
-          <div className="flex sm:-ml-4 mt-24 mb-4">
-            <img
-              src={Arrow.src}
-              alt="題目"
-              width={28}
-              height={28}
-              className="my-auto"
-            />
-            <h3
-              ref={content2Ref}
-              id="content2"
-              className="text-lg text-sky-500 my-auto ml-2"
-            >
-              コードの記述
-            </h3>
-          </div>
-          <div className="flex flex-col mt-8">
-            <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col">
-              <span className="my-auto">```</span>
-              <span className="my-auto ml-2">def main():</span>
-              <span className="my-auto ml-6">print('hoge')</span>
-              <span className="my-auto">```</span>
-            </div>
-            <div className="flex flex-col ml-4 mt-4">
-              <span className="my-auto text-sm flex mb-1">
-                <MdOutlineKeyboardArrowRight className="my-auto" />
-                実行結果
-              </span>
-              <div className="text-sm my-auto ml-4 rounded-md py-2 px-4 w-min whitespace-nowrap shadow-inner flex flex-col">
-                <span className="my-auto ml-2">def main():</span>
-                <span className="my-auto ml-6">print('hoge')</span>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col mt-4">
-            <p className="my-12">
-              また、記述するプログラミング言語を指定することにより
-              <span className="text-blue-400">シンタックスハイライト</span>
-              できます。
-            </p>
-            <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col mt-4">
-              <span className="my-auto">```python</span>
-              <span className="my-auto ml-2">def main():</span>
-              <span className="my-auto ml-6">print('hoge')</span>
-              <span className="my-auto">```</span>
-            </div>
-            <div className="flex flex-col ml-4 mt-4">
-              <span className="my-auto text-sm flex mb-1">
-                <MdOutlineKeyboardArrowRight className="my-auto" />
-                実行結果
-              </span>
-              <div className="text-sm my-auto ml-4 rounded-md py-2 px-4 w-min whitespace-nowrap shadow-inner flex flex-col">
-                <span className="my-auto ml-2 text-[#ebd247]">
-                  def
-                  <span className="my-auto ml-2 text-[#8bdf4c]">main():</span>
-                </span>
-                <span className="my-auto ml-6">print('hoge')</span>
-              </div>
-            </div>
-            <p className="mt-12">
-              その他の言語でも同様にシンタックスハイライトを付けることができるのでぜひお使いの言語が対応しているか確認してみてください。
-            </p>
-          </div>
-          <div className="flex flex-col mt-8">
-            <p className="mb-12">
-              さらに、どのファイルに記述しているのかわかるように
-              <span className="text-blue-400">ファイル名を書いてあげる</span>
-              と親切で読み手も理解が捗ります。以下のようにひと手間加えるだけで大丈夫です。
-            </p>
-            <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col mt-4">
-              <span className="my-auto">```python:main.py</span>
-              <span className="my-auto ml-2">def main():</span>
-              <span className="my-auto ml-6">print('hoge')</span>
-              <span className="my-auto">```</span>
-            </div>
-            <div className="flex flex-col ml-4 mt-4">
-              <span className="my-auto text-sm flex mb-1">
-                <MdOutlineKeyboardArrowRight className="my-auto" />
-                実行結果
-              </span>
-              <div className="text-sm my-auto ml-4 rounded-md pt-8 pb-2 px-4 w-min whitespace-nowrap shadow-inner flex flex-col relative">
-                <span className="absolute top-0 left-0 bg-gray-100 px-2">
-                  main.py
-                </span>
-                <span className="my-auto ml-2 text-[#ebd247]">
-                  def
-                  <span className="my-auto ml-2 text-[#8bdf4c]">main():</span>
-                </span>
-                <span className="my-auto ml-6">print('hoge')</span>
               </div>
             </div>
           </div>
@@ -512,6 +422,98 @@ const Article: NextPage = () => {
               <span className="my-auto">1. タスク</span>
               <span className="my-auto">2. タスク</span>
               <span className="my-auto">3. タスク</span>
+            </div>
+          </div>
+          <div className="flex sm:-ml-4 mt-24 mb-4">
+            <img
+              src={Arrow.src}
+              alt="題目"
+              width={28}
+              height={28}
+              className="my-auto"
+            />
+            <h3
+              ref={content2Ref}
+              id="content2"
+              className="text-lg text-sky-500 my-auto ml-2"
+            >
+              コードの記述
+            </h3>
+          </div>
+          <div className="flex flex-col mt-8">
+            <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col">
+              <span className="my-auto">```</span>
+              <span className="my-auto ml-2">def main():</span>
+              <span className="my-auto ml-6">print('hoge')</span>
+              <span className="my-auto">```</span>
+            </div>
+            <div className="flex flex-col ml-4 mt-4">
+              <span className="my-auto text-sm flex mb-1">
+                <MdOutlineKeyboardArrowRight className="my-auto" />
+                実行結果
+              </span>
+              <div className="text-sm my-auto ml-4 rounded-md py-2 px-4 w-min whitespace-nowrap shadow-inner flex flex-col">
+                <span className="my-auto ml-2">def main():</span>
+                <span className="my-auto ml-6">print('hoge')</span>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col mt-4">
+            <p className="my-12">
+              また、記述するプログラミング言語を指定することにより
+              <span className="text-blue-400">シンタックスハイライト</span>
+              できます。
+            </p>
+            <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col mt-4">
+              <span className="my-auto">```python</span>
+              <span className="my-auto ml-2">def main():</span>
+              <span className="my-auto ml-6">print('hoge')</span>
+              <span className="my-auto">```</span>
+            </div>
+            <div className="flex flex-col ml-4 mt-4">
+              <span className="my-auto text-sm flex mb-1">
+                <MdOutlineKeyboardArrowRight className="my-auto" />
+                実行結果
+              </span>
+              <div className="text-sm my-auto ml-4 rounded-md py-2 px-4 w-min whitespace-nowrap shadow-inner flex flex-col">
+                <span className="my-auto ml-2 text-[#ebd247]">
+                  def
+                  <span className="my-auto ml-2 text-[#8bdf4c]">main():</span>
+                </span>
+                <span className="my-auto ml-6">print('hoge')</span>
+              </div>
+            </div>
+            <p className="mt-12">
+              その他の言語でも同様にシンタックスハイライトを付けることができるのでぜひお使いの言語が対応しているか確認してみてください。
+            </p>
+          </div>
+          <div className="flex flex-col mt-8">
+            <p className="mb-12">
+              さらに、どのファイルに記述しているのかわかるように
+              <span className="text-blue-400">ファイル名を書いてあげる</span>
+              と親切で読み手も理解が捗ります。以下のようにひと手間加えるだけで大丈夫です。
+            </p>
+            <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col mt-4">
+              <span className="my-auto">```python:main.py</span>
+              <span className="my-auto ml-2">def main():</span>
+              <span className="my-auto ml-6">print('hoge')</span>
+              <span className="my-auto">```</span>
+            </div>
+            <div className="flex flex-col ml-4 mt-4">
+              <span className="my-auto text-sm flex mb-1">
+                <MdOutlineKeyboardArrowRight className="my-auto" />
+                実行結果
+              </span>
+              <div className="text-sm my-auto ml-4 rounded-md pt-8 pb-2 px-4 w-min whitespace-nowrap shadow-inner flex flex-col relative">
+                <span className="absolute top-0 left-0 bg-gray-100 px-2">
+                  main.py
+                </span>
+                <span className="my-auto ml-2 text-[#ebd247]">
+                  def
+                  <span className="my-auto ml-2 text-[#8bdf4c]">main():</span>
+                </span>
+                <span className="my-auto ml-6">print('hoge')</span>
+              </div>
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-8">

@@ -74,7 +74,7 @@ const Home: NextPage = () => {
                     <p className="text-sm text-gray-400 absolute mx-auto right-0 left-0 top-5">
                       {value.category}
                     </p>
-                    <p className="font-bold text-lg mx-auto right-0 left-0 top-10 absolute">
+                    <p className="text-lg mx-auto right-0 left-0 top-10 absolute whitespace-pre-wrap">
                       {value.title}
                     </p>
                   </button>
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
                     <p className="text-sm text-gray-400 absolute mx-auto right-0 left-0 top-5">
                       {value.category}
                     </p>
-                    <p className="font-bold text-lg mx-auto right-0 left-0 top-10 absolute">
+                    <p className="text-lg mx-auto right-0 left-0 top-10 absolute">
                       {value.title}
                     </p>
                   </button>
