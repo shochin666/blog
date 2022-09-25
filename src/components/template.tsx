@@ -41,6 +41,14 @@ export const tmplist: hoge[] = [
   },
 ];
 
+export const tryTmplist: hoge[] = [
+  // {
+  //   title: "blenderを試してみた",
+  //   category: "blender",
+  //   url: "/try/1",
+  // },
+];
+
 export const Template = (props: Props) => {
   const router = useRouter();
   const { children } = props;
