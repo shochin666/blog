@@ -47,7 +47,7 @@ const Home: NextPage = () => {
         <h1 className="text-gray-600 text-3xl mx-[20px] mt-[80px] sm:mt-28">
           Tech
         </h1>
-        <hr className="mx-[20px] sm:mb-12" />
+        <hr className="mx-[5px] sm:mx-[20px] sm:mb-12" />
         <div className="grid grid-cols-1 gap-[20px] h-min text-center">
           {addedlist.map((value) => {
             return (
@@ -165,7 +165,7 @@ const Home: NextPage = () => {
         )}
 
         {/* 計画シリーズ */}
-        <h1 className="text-gray-600 text-3xl mx-[20px] mt-[80px] sm:mt-28">
+        {/* <h1 className="text-gray-600 text-3xl mx-[20px] mt-[80px] sm:mt-28">
           やってみた
         </h1>
         <hr className="mx-[20px] sm:mb-12" />
@@ -284,7 +284,7 @@ const Home: NextPage = () => {
           >
             read more
           </button>
-        )}
+        )} */}
       </>
     </Template>
   );

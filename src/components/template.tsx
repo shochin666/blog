@@ -8,6 +8,7 @@ import { BsSnow2, BsTwitter } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { GiSnowman } from "react-icons/gi";
 
+import PowerPlantLogo from "../../public/PowerPlantLogo.png";
 import Icon from "../../public/Icon.jpeg";
 import Logo from "../../public/logo.png";
 import Hexagon from "../../public/hexagon.png";
@@ -511,10 +512,65 @@ export const Template = (props: Props) => {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row mx-[20px]">
-              <div className="h-[1800px] w-[18%] hidden sm:block pt-40"></div>
+              <div className="h-screen w-[18%] hidden sm:block pt-40">
+                {/* PC版広告 */}
+                <div className="rounded-lg py-8 flex flex-col shadow-lg mt-8 mb-14 w-[90%]">
+                  <img
+                    src={PowerPlantLogo.src}
+                    alt="ロゴ"
+                    height={120}
+                    width={120}
+                    className="mx-auto z-20"
+                  />
+                  <p className="text-gray-500 mt-2 font-bold text-lg text-center z-20">
+                    TUS POWER PLANT
+                  </p>
+                  <p className="text-gray-400 text-sm mx-4 my-4 z-20">
+                    某理系大学向けの授業評価が見られるサイト
+                  </p>
+                  <button
+                    onClick={() => {
+                      router.push("/ad/powerPlantLp");
+                    }}
+                    className="mx-[5%] text-white bg-sky-400 rounded-md py-2 px-full hover:bg-blue-400 duration-150"
+                  >
+                    見てみる
+                  </button>
+                </div>
+              </div>
               <div className="w-full sm:w-[64%] sm:shadow-md relative z-30">
                 {children}
               </div>
+              <div className="sm:hidden">
+                <h1 className="text-gray-600 text-3xl mx-[20px] mt-[20px] sm:mt-28">
+                  WORK PRODUCT
+                </h1>
+                <hr className="mx-[5px] sm:mx-[20px] sm:mb-12" />
+                <div className="mx-auto rounded-lg py-4 flex flex-col shadow-lg mt-8 mb-14 w-full bg-white">
+                  <img
+                    src={PowerPlantLogo.src}
+                    alt="ロゴ"
+                    height={120}
+                    width={120}
+                    className="mx-auto z-20"
+                  />
+                  <p className="text-gray-500 mt-2 font-bold text-lg text-center z-20">
+                    TUS POWER PLANT
+                  </p>
+                  <p className="text-gray-400 text-sm text-center my-4 z-20">
+                    某理系大学向けの授業評価が見られるサイト
+                  </p>
+                  <button
+                    onClick={() => {
+                      router.push("/ad/powerPlantLp");
+                    }}
+                    className="mx-[5%] text-white bg-sky-400 rounded-md py-4 px-full hover:bg-blue-400 duration-150"
+                  >
+                    見てみる
+                  </button>
+                </div>
+              </div>
+
               <div className="sm:hidden bg-gray-900 rounded-lg py-8 flex flex-col shadow-lg mt-8 mb-14 overflow-hidden relative">
                 <div className="flex gap-10 absolute -top-[60px] z-10">
                   <motion.div
@@ -1031,6 +1087,7 @@ export const Template = (props: Props) => {
                       width={80}
                     />
                   </div>
+                  {/* PC版 */}
                   <img
                     src={Icon.src}
                     alt="アイコン"
