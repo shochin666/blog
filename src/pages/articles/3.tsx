@@ -1,4 +1,6 @@
 import { NextPage } from "next";
+import Image from "next/image";
+
 import { useRef } from "react";
 import { Template } from "../../components/Template";
 import { useOffsetTop } from "hooks/useOffsetTop";
