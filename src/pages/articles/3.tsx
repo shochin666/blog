@@ -108,7 +108,7 @@ const Article: NextPage = () => {
           <p className="absolute text-right text-gray-400 z-10 right-6 top-8">
             更新日 : 2022/9/24
           </p>
-          <img
+          <Image
             src={TitleBackground.src}
             alt="背景"
             height={150}
@@ -138,7 +138,7 @@ const Article: NextPage = () => {
         <hr className="mx-[20px] mb-4" />
         <div className="w-[90%] mb-32 mx-auto text-gray-600">
           <div className="flex sm:-ml-4 mt-8 mb-4">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -209,7 +209,7 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-8">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -246,7 +246,7 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-8">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -264,7 +264,7 @@ const Article: NextPage = () => {
           <p className="mb-12">リンクの埋め込みととても似ていますが</p>
           <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min flex flex-col my-4 sm:whitespace-nowrap">
             <span className="my-auto">
-              ![rev4の日常ブログのロゴ](https://◯◯◯◯◯◯◯◯.com/img/1)
+              ![rev4の日常ブログのロゴ](https://◯◯◯◯◯◯◯◯.com/Image/1)
             </span>
           </div>
           <p className="my-12">のように</p>
@@ -278,7 +278,7 @@ const Article: NextPage = () => {
               実行結果
             </span>
             <div className="my-auto ml-12 mt-2">
-              <img
+              <Image
                 src={Logo.src}
                 alt="ロゴ"
                 height={80}
@@ -288,7 +288,7 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-8">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -323,7 +323,7 @@ const Article: NextPage = () => {
             なお、{"> "}をネストして引用自体をネストすることもできます。
           </p>
           <div className="flex sm:-ml-4 mt-24 mb-8">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -373,7 +373,7 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-8">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -425,7 +425,7 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-4">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -517,7 +517,7 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-8">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}

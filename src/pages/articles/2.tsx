@@ -51,7 +51,7 @@ const Article: NextPage = () => {
           <p className="absolute text-right text-gray-400 z-10 right-6 top-8">
             更新日 : 2022/9/19
           </p>
-          <img
+          <Image
             src={TitleBackground.src}
             alt="背景"
             height={150}
@@ -79,7 +79,7 @@ const Article: NextPage = () => {
         <hr className="mx-[20px] mb-4" />
         <div className="w-[90%] mx-auto text-gray-600 mb-32">
           <div className="flex sm:-ml-4 mt-8 mb-4">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -95,7 +95,7 @@ const Article: NextPage = () => {
             </h3>
           </div>
           <div className="flex h-10 my-8">
-            <img
+            <Image
               src={LinkIcon.src}
               alt="リンク"
               height={28}
@@ -123,7 +123,7 @@ const Article: NextPage = () => {
             初心者目線でわかりやすく書いてあるのでおすすめです！
           </p>
           <div className="flex h-10 mt-20 my-8">
-            <img
+            <Image
               src={LinkIcon.src}
               alt="リンク"
               height={28}
@@ -145,7 +145,7 @@ const Article: NextPage = () => {
             という方に向いてます！
           </p>
           <div className="flex h-10 mt-20 my-8">
-            <img
+            <Image
               src={LinkIcon.src}
               alt="リンク"
               height={28}
@@ -176,7 +176,7 @@ const Article: NextPage = () => {
             と個人的に思いました！
           </p>
           <div className="flex h-10 mt-20 my-8">
-            <img
+            <Image
               src={LinkIcon.src}
               alt="リンク"
               height={28}
@@ -206,7 +206,7 @@ const Article: NextPage = () => {
             今後のエラー回避の予防として活躍してくれるおすすめのサイトです！
           </p>
           <div className="flex sm:-ml-4 mt-28 mb-4">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -222,7 +222,7 @@ const Article: NextPage = () => {
             </h3>
           </div>
           <div className="flex h-10 my-8">
-            <img
+            <Image
               src={LinkIcon.src}
               alt="リンク"
               height={28}
@@ -248,7 +248,7 @@ const Article: NextPage = () => {
             初心者にとって理解がかなり捗るかと思います！
           </p>
           <div className="flex h-10 mt-20 mb-8">
-            <img
+            <Image
               src={LinkIcon.src}
               alt="リンク"
               height={28}
@@ -274,7 +274,7 @@ const Article: NextPage = () => {
             実際に用いるコードと実行結果が横並びで記載されていてすぐに確認しながら学習を進められるようになっています。
           </p>
           <div className="flex h-10 mt-20 mb-8">
-            <img
+            <Image
               src={LinkIcon.src}
               alt="リンク"
               height={28}
@@ -303,7 +303,7 @@ const Article: NextPage = () => {
             の姉妹編となります。同様に重要度別で並んでいるので学習の手助けになるかと思い参考にさせていただきました。
           </p>
           <div className="flex h-10 mt-20 mb-8">
-            <img
+            <Image
               src={LinkIcon.src}
               alt="リンク"
               height={28}

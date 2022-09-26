@@ -11,17 +11,17 @@ import LinkIcon from "../../../public/linkIcon.png";
 import TitleBackground from "../../../public/titleBackground.png";
 import Arrow from "../../../public/Arrow.png";
 import Success from "../../../public/article1/undraw_game_day_ucx9.png";
-import Img1 from "../../../public/article1/img1.png";
-import Img2 from "../../../public/article1/img2.png";
-import Img3 from "../../../public/article1/img3.png";
-import Img4 from "../../../public/article1/img4.png";
-import Img5 from "../../../public/article1/img5.png";
-import Img6 from "../../../public/article1/img6.png";
-import Img7 from "../../../public/article1/img7.png";
-import Img8 from "../../../public/article1/img8.png";
-import Img9 from "../../../public/article1/img9.png";
-import Img10 from "../../../public/article1/img10.png";
-import Img11 from "../../../public/article1/img11.png";
+import Image1 from "../../../public/article1/Image1.png";
+import Image2 from "../../../public/article1/Image2.png";
+import Image3 from "../../../public/article1/Image3.png";
+import Image4 from "../../../public/article1/Image4.png";
+import Image5 from "../../../public/article1/Image5.png";
+import Image6 from "../../../public/article1/Image6.png";
+import Image7 from "../../../public/article1/Image7.png";
+import Image8 from "../../../public/article1/Image8.png";
+import Image9 from "../../../public/article1/Image9.png";
+import Image10 from "../../../public/article1/Image10.png";
+import Image11 from "../../../public/article1/Image11.png";
 import { ReturnButton } from "components/ReturnButton";
 
 const Article: NextPage = () => {
@@ -88,7 +88,7 @@ const Article: NextPage = () => {
           <p className="absolute text-right text-gray-400 z-10 right-6 top-8">
             更新日 : 2022/9/15
           </p>
-          <img
+          <Image
             src={TitleBackground.src}
             alt="背景"
             height={150}
@@ -147,7 +147,7 @@ const Article: NextPage = () => {
         <hr className="mx-[20px] mb-4" />
         <div className="w-[90%] mx-auto text-gray-600">
           <div className="flex sm:-ml-4 mt-8 mb-4">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -170,7 +170,7 @@ const Article: NextPage = () => {
             以下のリンクをクリックしてダウンロードページに移動します。
           </p>
           <div className="flex h-10 my-8">
-            <img
+            <Image
               src={LinkIcon.src}
               alt="リンク"
               height={28}
@@ -186,8 +186,8 @@ const Article: NextPage = () => {
               vscode 公式サイト
             </a>
           </div>
-          <img
-            src={Img1.src}
+          <Image
+            src={Image1.src}
             alt="画像1"
             height={400}
             width={600}
@@ -199,7 +199,7 @@ const Article: NextPage = () => {
             ダウンロードしたパッケージを解凍してデスクトップにアプリを配置しておきましょう。
           </p>
           <div className="flex sm:-ml-4 mt-20 mb-4">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -225,16 +225,16 @@ const Article: NextPage = () => {
           </p>
           <div className="hidden sm:block">
             <div className="flex justify-between w-[500px] mx-auto mt-12 mb-28">
-              <img
-                src={Img2.src}
+              <Image
+                src={Image2.src}
                 alt="画像2"
                 height={360}
                 width={300}
                 className="rounded-lg"
               />
               <TbArrowBigRightLine className="my-auto text-3xl text-green-400 animate-pulse" />
-              <img
-                src={Img3.src}
+              <Image
+                src={Image3.src}
                 alt="画像3"
                 height={100}
                 width={80}
@@ -244,16 +244,16 @@ const Article: NextPage = () => {
           </div>
           <div className="sm:hidden">
             <div className="flex flex-col justify-between mx-auto mt-12 mb-28">
-              <img
-                src={Img2.src}
+              <Image
+                src={Image2.src}
                 alt="画像2"
                 height={360}
                 width={300}
                 className="rounded-lg mx-auto"
               />
               <TbArrowBigDownLine className="my-8 mx-auto text-[40px] text-green-400 animate-pulse" />
-              <img
-                src={Img3.src}
+              <Image
+                src={Image3.src}
                 alt="画像3"
                 height={100}
                 width={80}
@@ -268,7 +268,7 @@ const Article: NextPage = () => {
         <hr className="mx-[20px] mb-4" />
         <div className="w-[90%] mx-auto text-gray-600 mb-32">
           <div className="flex sm:-ml-4 mt-8 mb-4">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -292,7 +292,7 @@ const Article: NextPage = () => {
           </p>
           <div className="hidden sm:block">
             <div className="flex my-16">
-              <img src={Img4.src} alt="画像4" height={160} width={44} />
+              <Image src={Image4.src} alt="画像4" height={160} width={44} />
               <div className="flex flex-col py-4 px-8 justify-between">
                 <p>
                   vscodeの左側に左の画像のようなアイコンが複数表示されているので、拡張機能を選択します。
@@ -300,8 +300,8 @@ const Article: NextPage = () => {
                   そして<span className="text-blue-400">Live Server</span>
                   と検索をかけると以下のプラグインが表示されるのでインストールしておきましょう。
                 </p>
-                <img
-                  src={Img5.src}
+                <Image
+                  src={Image5.src}
                   alt="画像5"
                   height={400}
                   width={620}
@@ -313,7 +313,7 @@ const Article: NextPage = () => {
           <div className="sm:hidden">
             <div className="flex flex-col my-16">
               <div className="flex py-4 justify-between">
-                <img src={Img4.src} alt="画像4" height={100} width={24} />
+                <Image src={Image4.src} alt="画像4" height={100} width={24} />
                 <p className="mx-4 my-auto">
                   vscodeの左側に左の画像のようなアイコンが複数表示されているので、拡張機能を選択します。
                 </p>
@@ -323,8 +323,8 @@ const Article: NextPage = () => {
                   そして<span className="text-blue-400">Live Server</span>
                   と検索をかけると以下のプラグインが表示されるのでインストールしておきましょう。
                 </p>
-                <img
-                  src={Img5.src}
+                <Image
+                  src={Image5.src}
                   alt="画像5"
                   height={400}
                   width={620}
@@ -334,7 +334,7 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-4">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -359,8 +359,8 @@ const Article: NextPage = () => {
             <br />
             左上の表示が画像のようになっていれば完了です。
           </p>
-          <img
-            src={Img6.src}
+          <Image
+            src={Image6.src}
             alt="画像6"
             height={40}
             width={200}
@@ -373,7 +373,7 @@ const Article: NextPage = () => {
             以下のリンクからそのままコードをコピーして自分のindex.htmlに貼り付けてみてください。
           </p>
           <div className="flex h-10 my-8">
-            <img
+            <Image
               src={LinkIcon.src}
               alt="リンク"
               height={28}
@@ -395,8 +395,8 @@ const Article: NextPage = () => {
             <br />
             ではbodyタグの中に以下のコードを記述してみましょう。
           </p>
-          <img
-            src={Img7.src}
+          <Image
+            src={Image7.src}
             alt="画像7"
             height={250}
             width={300}
@@ -422,15 +422,15 @@ const Article: NextPage = () => {
             </span>
             が表示されます。
           </p>
-          <img
-            src={Img8.src}
+          <Image
+            src={Image8.src}
             alt="画像8"
             height={380}
             width={600}
             className="shadow-md mx-auto mt-12 mb-20"
           />
           <div className="flex sm:-ml-4 mt-24 mb-4">
-            <img
+            <Image
               src={Arrow.src}
               alt="題目"
               width={28}
@@ -451,8 +451,8 @@ const Article: NextPage = () => {
             ではindex.htmlに戻り、titleタグ直上に以下のようにlinkタグを記述します。これにより同階層にあるstyle.cssをindex.htmlから呼び出すことができました。
             <br />
           </p>
-          <img
-            src={Img9.src}
+          <Image
+            src={Image9.src}
             alt="画像9"
             height={180}
             width={380}
@@ -463,8 +463,8 @@ const Article: NextPage = () => {
             <span className="text-blue-400">" message "</span>
             というクラス名をつけてみましょう。
           </p>
-          <img
-            src={Img10.src}
+          <Image
+            src={Image10.src}
             alt="画像10"
             height={10}
             width={380}
@@ -474,7 +474,7 @@ const Article: NextPage = () => {
             style.cssに先ほどのクラス名に対応した記述を書いていきます。以下のリンクからコードをコピーしてstyle.cssに貼り付けてみましょう。
           </p>
           <div className="flex h-10 my-8">
-            <img
+            <Image
               src={LinkIcon.src}
               alt="リンク"
               height={28}
@@ -494,8 +494,8 @@ const Article: NextPage = () => {
             command + S
           </span>
           で保存してブラウザをリロードしてみましょう。無事にHTMLファイルにスタイルが当たって文字の色が変わって表示されました!!
-          <img
-            src={Img11.src}
+          <Image
+            src={Image11.src}
             alt="画像11"
             height={380}
             width={620}
@@ -514,7 +514,7 @@ const Article: NextPage = () => {
             を押してローカルサーバーを必ず落としましょう。
           </p>
           <p>これにて今回の記事は終了となります。お疲れ様でした!!</p>
-          <img
+          <Image
             src={Success.src}
             alt="成功"
             height={520}

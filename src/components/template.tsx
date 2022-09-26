@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Image from "next/image";
 import { ReactElement, ReactNode, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -81,7 +82,7 @@ export const Template = (props: Props) => {
             <div className="w-full fixed top-0 h-[60px] flex justify-between mb-4 px-[2%] bg-white z-40">
               <div className="mt-4">
                 <a href="/" className="flex">
-                  <img src={Logo.src} alt="背景" height={40} width={40} />
+                  <Image src={Logo.src} alt="背景" height={40} width={40} />
                   <p className="font-bold text-2xl whitespace-nowrap bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent ml-2 sm:ml-4">
                     rev4 lab.
                   </p>
@@ -515,7 +516,7 @@ export const Template = (props: Props) => {
               <div className="h-screen w-[18%] hidden sm:block pt-40">
                 {/* PC版広告 */}
                 <div className="rounded-lg py-8 flex flex-col shadow-lg mt-8 mb-14 w-[90%]">
-                  <img
+                  <Image
                     src={PowerPlantLogo.src}
                     alt="ロゴ"
                     height={120}
@@ -547,7 +548,7 @@ export const Template = (props: Props) => {
                 </h1>
                 <hr className="mx-[5px] sm:mx-[20px] sm:mb-12" />
                 <div className="mx-auto rounded-lg py-4 flex flex-col shadow-lg mt-8 mb-14 w-full bg-white">
-                  <img
+                  <Image
                     src={PowerPlantLogo.src}
                     alt="ロゴ"
                     height={120}
@@ -600,84 +601,344 @@ export const Template = (props: Props) => {
                     exit={{ opacity: 0 }}
                     className="bg-blue-500 w-8 h-8 rounded-full z-20 absolute"
                   ></motion.div>
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
                 </div>
                 <div className="flex gap-10 absolute -top-[24px] -left-[60.5px] z-20">
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
                 </div>
                 <div className="flex gap-10 absolute top-[12px] z-10">
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
                 </div>
                 <div className="flex gap-10 absolute top-[48px] -left-[60.5px] z-20">
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
                 </div>
                 <div className="flex gap-10 absolute top-[84px] z-10">
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
                 </div>
                 <div className="flex gap-10 absolute top-[120px] -left-[60.5px] z-20">
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
                 </div>
                 <div className="flex gap-10 absolute top-[156px] z-10">
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
                 </div>
                 <div className="flex gap-10 absolute top-[192px] -left-[60.5px] z-20">
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
                 </div>
                 <div className="flex gap-10 absolute top-[228px] z-10">
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
                 </div>
                 <div className="flex gap-10 absolute top-[264px] -left-[60.5px] z-20">
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
                 </div>
                 <div className="flex gap-10 absolute top-[300px] z-10">
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
                 </div>
                 <div className="flex gap-10 absolute top-[336px] -left-[60.5px] z-20">
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
                 </div>
                 <div className="flex gap-10 absolute top-[372px] z-10">
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
-                  <img src={Hexagon.src} alt="六角形" height={80} width={80} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形"
+                    height={80}
+                    width={80}
+                  />
                 </div>
-                <img
+                <Image
                   src={Icon.src}
                   alt="アイコン"
                   height={120}
@@ -750,25 +1011,25 @@ export const Template = (props: Props) => {
                       exit={{ opacity: 0 }}
                       className="bg-blue-500 w-8 h-8 rounded-full z-20 absolute"
                     ></motion.div>
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
@@ -776,25 +1037,25 @@ export const Template = (props: Props) => {
                     />
                   </div>
                   <div className="flex gap-10 absolute -top-[24px] -left-[60.5px] z-20">
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
@@ -802,25 +1063,25 @@ export const Template = (props: Props) => {
                     />
                   </div>
                   <div className="flex gap-10 absolute top-[12px] z-10">
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
@@ -828,25 +1089,25 @@ export const Template = (props: Props) => {
                     />
                   </div>
                   <div className="flex gap-10 absolute top-[48px] -left-[60.5px] z-20">
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
@@ -854,25 +1115,25 @@ export const Template = (props: Props) => {
                     />
                   </div>
                   <div className="flex gap-10 absolute top-[84px] z-10">
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
@@ -880,25 +1141,25 @@ export const Template = (props: Props) => {
                     />
                   </div>
                   <div className="flex gap-10 absolute top-[120px] -left-[60.5px] z-20">
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
@@ -906,25 +1167,25 @@ export const Template = (props: Props) => {
                     />
                   </div>
                   <div className="flex gap-10 absolute top-[156px] z-10">
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
@@ -932,25 +1193,25 @@ export const Template = (props: Props) => {
                     />
                   </div>
                   <div className="flex gap-10 absolute top-[192px] -left-[60.5px] z-20">
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
@@ -958,25 +1219,25 @@ export const Template = (props: Props) => {
                     />
                   </div>
                   <div className="flex gap-10 absolute top-[228px] z-10">
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
@@ -984,25 +1245,25 @@ export const Template = (props: Props) => {
                     />
                   </div>
                   <div className="flex gap-10 absolute top-[264px] -left-[60.5px] z-20">
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
@@ -1010,25 +1271,25 @@ export const Template = (props: Props) => {
                     />
                   </div>
                   <div className="flex gap-10 absolute top-[300px] z-10">
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
@@ -1036,25 +1297,25 @@ export const Template = (props: Props) => {
                     />
                   </div>
                   <div className="flex gap-10 absolute top-[336px] -left-[60.5px] z-20">
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
@@ -1062,25 +1323,25 @@ export const Template = (props: Props) => {
                     />
                   </div>
                   <div className="flex gap-10 absolute top-[372px] z-10">
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
                       width={80}
                     />
-                    <img
+                    <Image
                       src={Hexagon.src}
                       alt="六角形"
                       height={80}
@@ -1088,7 +1349,7 @@ export const Template = (props: Props) => {
                     />
                   </div>
                   {/* PC版 */}
-                  <img
+                  <Image
                     src={Icon.src}
                     alt="アイコン"
                     height={120}

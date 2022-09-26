@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -6,10 +7,6 @@ import { Template } from "../components/Template";
 import ArticleDecoration from "../../public/ArticleDecoration.png";
 import styles from "../styles/index.module.css";
 import { hoge, tmplist, tryTmplist } from "../components/Template";
-// import Head from "next/head";
-// import Image from "next/image";
-// import styles from "../styles/Home.module.css";
-// import styles from "../styles/index.module.css";
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -59,7 +56,7 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <img
+                    <Image
                       src={ArticleDecoration.src}
                       alt="デコレーション"
                       height={80}
@@ -81,7 +78,7 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <img
+                    <Image
                       src={ArticleDecoration.src}
                       alt="デコレーション"
                       height={80}
@@ -110,7 +107,7 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <img
+                    <Image
                       src={ArticleDecoration.src}
                       alt="デコレーション"
                       height={80}
@@ -132,7 +129,7 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <img
+                    <Image
                       src={ArticleDecoration.src}
                       alt="デコレーション"
                       height={80}
@@ -180,7 +177,7 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <img
+                    <Image
                       src={ArticleDecoration.src}
                       alt="デコレーション"
                       height={80}
@@ -202,7 +199,7 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <img
+                    <Image
                       src={ArticleDecoration.src}
                       alt="デコレーション"
                       height={80}
@@ -231,7 +228,7 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <img
+                    <Image
                       src={ArticleDecoration.src}
                       alt="デコレーション"
                       height={80}
@@ -253,7 +250,7 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <img
+                    <Image
                       src={ArticleDecoration.src}
                       alt="デコレーション"
                       height={80}
