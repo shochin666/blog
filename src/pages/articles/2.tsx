@@ -11,6 +11,7 @@ import TitleBackground from "../../../public/titleBackground.png";
 import Arrow from "../../../public/Arrow.png";
 import { useRef } from "react";
 import { useOffsetTop } from "hooks/useOffsetTop";
+import Link from "next/link";
 
 const Article: NextPage = () => {
   const content1Ref = useRef(null);
@@ -103,14 +104,15 @@ const Article: NextPage = () => {
               width={4}
               className="mr-4"
             />
-            <a
-              href="https://zero-plus.io/media/html-tags-and-usage/"
-              className="hover:underline my-auto text-[#009c3e]"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              HTMLのよく使うタグ一覧！この15個さえ押さえればOK！
-            </a>
+            <Link href="https://zero-plus.io/media/html-tags-and-usage/">
+              <a
+                className="hover:underline my-auto text-[#009c3e]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                HTMLのよく使うタグ一覧！この15個さえ押さえればOK！
+              </a>
+            </Link>
           </div>
           <p>
             実際のコーディングは特殊な場合を除いて限られた個数のタグを多用します。
@@ -131,14 +133,15 @@ const Article: NextPage = () => {
               width={4}
               className="mr-4"
             />
-            <a
-              href="https://webukatu.com/wordpress/blog/5628/"
-              className="hover:underline my-auto text-[#009c3e]"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              【初心者向け】HTMLタグ一覧！ よく使うものをまとめました
-            </a>
+            <Link href="https://webukatu.com/wordpress/blog/5628/">
+              <a
+                className="hover:underline my-auto text-[#009c3e]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                【初心者向け】HTMLタグ一覧！ よく使うものをまとめました
+              </a>
+            </Link>
           </div>
           <p>
             同じように初心者目線で書かれているのでとても学習しやすく、さらにHTMLの概要が説明されていたりと、
@@ -153,14 +156,15 @@ const Article: NextPage = () => {
               width={4}
               className="mr-4"
             />
-            <a
-              href="https://qiita.com/7note/items/988274920e28cb00fa25"
-              className="hover:underline my-auto text-[#009c3e]"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              【初心者向け】HTMLのタグ一覧を覚えておきたい重要度別に分けてみた
-            </a>
+            <Link href="https://qiita.com/7note/items/988274920e28cb00fa25">
+              <a
+                className="hover:underline my-auto text-[#009c3e]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                【初心者向け】HTMLのタグ一覧を覚えておきたい重要度別に分けてみた
+              </a>
+            </Link>
           </div>
           <p>
             タイトルからお察しいただけたかと思いますが、上から重要度順に並んでいるので
@@ -184,14 +188,15 @@ const Article: NextPage = () => {
               width={4}
               className="mr-4"
             />
-            <a
-              href="https://yoshikawaweb.com/element/"
-              className="hover:underline my-auto text-[#009c3e]"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              HTML5 入れ子チートシート
-            </a>
+            <Link href="https://yoshikawaweb.com/element/">
+              <a
+                className="hover:underline my-auto text-[#009c3e]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                HTML5 入れ子チートシート
+              </a>
+            </Link>
           </div>
           <p>
             <span className="text-blue-400">基礎的なHTMLを完全に理解した</span>
@@ -230,14 +235,15 @@ const Article: NextPage = () => {
               width={4}
               className="mr-4"
             />
-            <a
-              href="https://webliker.info/material/html-css-super-beginner03/"
-              className="hover:underline my-auto text-[#009c3e]"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              #06 CSSの書き方を覚えよう
-            </a>
+            <Link href="https://webliker.info/material/html-css-super-beginner03/">
+              <a
+                className="hover:underline my-auto text-[#009c3e]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                #06 CSSの書き方を覚えよう
+              </a>
+            </Link>
           </div>
           <p>
             HTMLを学習したもののスタイルの当て方がわからない方はしっかりとCSSの基本文法から学んでいきましょう！
@@ -256,14 +262,15 @@ const Article: NextPage = () => {
               width={4}
               className="mr-4"
             />
-            <a
-              href="https://webliker.info/css/07370/"
-              className="hover:underline my-auto text-[#009c3e]"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              あなたはいくつ知ってる？CSSのセレクタ40個を総まとめ【チートシート付き】
-            </a>
+            <Link href="https://webliker.info/css/07370/">
+              <a
+                className="hover:underline my-auto text-[#009c3e]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                あなたはいくつ知ってる？CSSのセレクタ40個を総まとめ【チートシート付き】
+              </a>
+            </Link>
           </div>
           <p>
             こちらの記事はCSSを基礎からというより、一通りCSSの基礎は理解できたので
@@ -282,25 +289,27 @@ const Article: NextPage = () => {
               width={4}
               className="mr-4"
             />
-            <a
-              href="https://qiita.com/7note/items/c90ba916f23d29229ac4"
-              className="hover:underline my-auto text-[#009c3e]"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              【初心者向け】CSSのプロパティ一覧を覚えておきたい重要度別に分けてみた
-            </a>
+            <Link href="https://qiita.com/7note/items/c90ba916f23d29229ac4">
+              <a
+                className="hover:underline my-auto text-[#009c3e]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                【初心者向け】CSSのプロパティ一覧を覚えておきたい重要度別に分けてみた
+              </a>
+            </Link>
           </div>
           <p>
             お気づきかもしれませんが
-            <a
-              href="https://qiita.com/7note/items/988274920e28cb00fa25"
-              className="underline my-auto text-[#009c3e]"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              【初心者向け】HTMLのタグ一覧を覚えておきたい重要度別に分けてみた
-            </a>
+            <Link href="https://qiita.com/7note/items/988274920e28cb00fa25">
+              <a
+                className="underline my-auto text-[#009c3e]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                【初心者向け】HTMLのタグ一覧を覚えておきたい重要度別に分けてみた
+              </a>
+            </Link>
             の姉妹編となります。同様に重要度別で並んでいるので学習の手助けになるかと思い参考にさせていただきました。
           </p>
           <div className="flex h-10 mt-20 mb-8">
@@ -311,14 +320,15 @@ const Article: NextPage = () => {
               width={4}
               className="mr-4"
             />
-            <a
-              href="https://developer.mozilla.org/ja/docs/Web/CSS/Reference"
-              className="hover:underline my-auto text-[#009c3e]"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              CSS リファレンス
-            </a>
+            <Link href="https://developer.mozilla.org/ja/docs/Web/CSS/Reference">
+              <a
+                className="hover:underline my-auto text-[#009c3e]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CSS リファレンス
+              </a>
+            </Link>
           </div>
           <p>
             CSSのバイブルと言ってもいいほど学習者なら必ず1度は目にしたことがあるでしょうMDNのCSSリファレンスの紹介です。

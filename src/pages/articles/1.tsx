@@ -24,6 +24,7 @@ import Image9 from "../../../public/article1/Image9.png";
 import Image10 from "../../../public/article1/Image10.png";
 import Image11 from "../../../public/article1/Image11.png";
 import { ReturnButton } from "components/ReturnButton";
+import Link from "next/link";
 
 const Article: NextPage = () => {
   const content1Ref = useRef(null);
@@ -178,14 +179,15 @@ const Article: NextPage = () => {
               width={4}
               className="mr-4"
             />
-            <a
-              href="https://code.visualstudio.com/download"
-              className="hover:underline my-auto text-[#009c3e]"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              vscode 公式サイト
-            </a>
+            <Link href="https://code.visualstudio.com/download">
+              <a
+                className="hover:underline my-auto text-[#009c3e]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                vscode 公式サイト
+              </a>
+            </Link>
           </div>
           <Image
             src={Image1.src}
@@ -381,14 +383,15 @@ const Article: NextPage = () => {
               width={4}
               className="mr-4"
             />
-            <a
-              href="https://github.com/shochin666/demo/blob/main/index.html"
-              className="hover:underline my-auto text-[#009c3e]"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              index.html
-            </a>
+            <Link href="https://github.com/shochin666/demo/blob/main/index.html">
+              <a
+                className="hover:underline my-auto text-[#009c3e]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                index.html
+              </a>
+            </Link>
           </div>
           <p>
             基本的なHTMLの骨組みとなり、このコードの内側にコードをネスト(入れ子)してHTMLファイルを作成していきます。
@@ -482,14 +485,15 @@ const Article: NextPage = () => {
               width={4}
               className="mr-4"
             />
-            <a
-              href="https://github.com/shochin666/demo/blob/main/style.css"
-              className="hover:underline my-auto text-[#009c3e]"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              style.css
-            </a>
+            <Link href="https://github.com/shochin666/demo/blob/main/style.css">
+              <a
+                className="hover:underline my-auto text-[#009c3e]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                style.css
+              </a>
+            </Link>
           </div>
           <span className="px-2 py-1 rounded-md shadow-inner mr-1 bg-gray-50">
             command + S

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import Image from "next/image";
 import { ReactElement, ReactNode, useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -81,12 +82,14 @@ export const Template = (props: Props) => {
           <div className="w-full">
             <div className="w-full fixed top-0 h-[60px] flex justify-between mb-4 px-[2%] bg-white z-40">
               <div className="mt-4">
-                <a href="/" className="flex">
-                  <Image src={Logo.src} alt="背景" height={40} width={40} />
-                  <p className="font-bold text-2xl whitespace-nowrap bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent ml-2 sm:ml-4">
-                    rev4 lab.
-                  </p>
-                </a>
+                <Link href="/">
+                  <a className="flex">
+                    <Image src={Logo.src} alt="背景" height={40} width={40} />
+                    <p className="font-bold text-2xl whitespace-nowrap bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent ml-2 sm:ml-4">
+                      rev4 lab.
+                    </p>
+                  </a>
+                </Link>
               </div>
               <div className="flex h-2 mr-32 sm:h-6 -mt-20 sm:mt-0">
                 <motion.div
@@ -955,33 +958,25 @@ export const Template = (props: Props) => {
                   <br />
                 </p>
                 <div className="flex justify-around text-white text-xl mt-4 z-20">
-                  <a href="#" className={styles.github__button}>
-                    <AiFillGithub className="text-2xl" />
-                  </a>
-                  <a href="#" className={styles.twitter__button}>
-                    <BsTwitter />
-                  </a>
-                  <a href="#" className={styles.twitter__button}>
-                    <FiMail />
-                  </a>
+                  <Link href="https://github.com/shochin666">
+                    <a className={styles.github__button}>
+                      <AiFillGithub className="text-2xl" />
+                    </a>
+                  </Link>
+                  <Link href="https://twitter.com/gg_pafeiwasi">
+                    <a className={styles.twitter__button}>
+                      <BsTwitter />
+                    </a>
+                  </Link>
+                  <Link href="#">
+                    <a className={styles.twitter__button}>
+                      <FiMail />
+                    </a>
+                  </Link>
                 </div>
               </div>
               {/* PC版 */}
               <div className="w-[18%] hidden sm:block">
-                {/* <div className="mt-[140px] mx-4">
-                  <h2 className="font-bold text-blue-400">注目の投稿</h2>
-                  <div className="mx-4">
-                    {tmplist.slice(0, 3).map((value) => {
-                      return (
-                        <>
-                          <a href="#" className="hover:underline">
-                            <p>{value.title}</p>
-                          </a>
-                        </>
-                      );
-                    })}
-                  </div>
-                </div> */}
                 <div className="fixed right-[16px] bg-gray-900 rounded-lg w-[16%] flex flex-col py-[20px] shadow-lg bottom-[40px] overflow-hidden">
                   <div className="flex gap-10 absolute -top-[60px] z-10">
                     <motion.div
@@ -1366,15 +1361,21 @@ export const Template = (props: Props) => {
                     <br />
                   </p>
                   <div className="flex justify-around text-white text-xl mt-4 z-20">
-                    <a href="#" className={styles.github__button}>
-                      <AiFillGithub className="text-2xl" />
-                    </a>
-                    <a href="#" className={styles.twitter__button}>
-                      <BsTwitter />
-                    </a>
-                    <a href="#" className={styles.twitter__button}>
-                      <FiMail />
-                    </a>
+                    <Link href="https://github.com/shochin666">
+                      <a className={styles.github__button}>
+                        <AiFillGithub className="text-2xl" />
+                      </a>
+                    </Link>
+                    <Link href="https://twitter.com/gg_pafeiwasi">
+                      <a className={styles.twitter__button}>
+                        <BsTwitter />
+                      </a>
+                    </Link>
+                    <Link href="#">
+                      <a className={styles.twitter__button}>
+                        <FiMail />
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
