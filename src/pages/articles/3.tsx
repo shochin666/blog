@@ -110,13 +110,15 @@ const Article: NextPage = () => {
           <p className="absolute text-right text-gray-400 z-10 right-6 top-8">
             更新日 : 2022/9/24
           </p>
-          <Image
-            src={TitleBackground.src}
-            alt="背景"
-            height={150}
-            width={150}
-            className="absolute right-0 z-0"
-          />
+          <div className="absolute right-0 z-0">
+            <Image
+              src={TitleBackground.src}
+              alt="背景"
+              height={150}
+              width={150}
+              className="absolute right-0 z-0"
+            />
+          </div>
         </div>
         <h2 className="text-gray-600 text-2xl sm:text-3xl mx-[20px]">
           きっかけ
@@ -140,13 +142,9 @@ const Article: NextPage = () => {
         <hr className="mx-[20px] mb-4" />
         <div className="w-[90%] mb-32 mx-auto text-gray-600">
           <div className="flex sm:-ml-4 mt-8 mb-4">
-            <Image
-              src={Arrow.src}
-              alt="題目"
-              width={28}
-              height={28}
-              className="my-auto"
-            />
+            <div className="h-6 my-auto">
+              <Image src={Arrow.src} alt="題目" width={28} height={28} />
+            </div>
             <h3
               ref={content1Ref}
               id="content1"
@@ -211,19 +209,15 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-8">
-            <Image
-              src={Arrow.src}
-              alt="題目"
-              width={28}
-              height={28}
-              className="my-auto"
-            />
+            <div className="h-6 my-auto">
+              <Image src={Arrow.src} alt="題目" width={28} height={28} />
+            </div>
             <h3
               ref={content3Ref}
               id="content3"
               className="text-lg text-sky-500 my-auto ml-2"
             >
-              リンクの埋め込み
+              リンク埋め込み
             </h3>
           </div>
           <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min flex flex-col my-4 sm:whitespace-nowrap">
@@ -248,13 +242,9 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-8">
-            <Image
-              src={Arrow.src}
-              alt="題目"
-              width={28}
-              height={28}
-              className="my-auto"
-            />
+            <div className="h-6 my-auto">
+              <Image src={Arrow.src} alt="題目" width={28} height={28} />
+            </div>
             <h3
               ref={content4Ref}
               id="content4"
@@ -290,13 +280,9 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-8">
-            <Image
-              src={Arrow.src}
-              alt="題目"
-              width={28}
-              height={28}
-              className="my-auto"
-            />
+            <div className="h-6 my-auto">
+              <Image src={Arrow.src} alt="題目" width={28} height={28} />
+            </div>
             <h3
               ref={content5Ref}
               id="content5"
@@ -325,13 +311,9 @@ const Article: NextPage = () => {
             なお、{"> "}をネストして引用自体をネストすることもできます。
           </p>
           <div className="flex sm:-ml-4 mt-24 mb-8">
-            <Image
-              src={Arrow.src}
-              alt="題目"
-              width={28}
-              height={28}
-              className="my-auto"
-            />
+            <div className="h-6 my-auto">
+              <Image src={Arrow.src} alt="題目" width={28} height={28} />
+            </div>
             <h3
               ref={content6Ref}
               id="content6"
@@ -375,13 +357,9 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-8">
-            <Image
-              src={Arrow.src}
-              alt="題目"
-              width={28}
-              height={28}
-              className="my-auto"
-            />
+            <div className="h-6 my-auto">
+              <Image src={Arrow.src} alt="題目" width={28} height={28} />
+            </div>
             <h3
               ref={content7Ref}
               id="content7"
@@ -427,13 +405,9 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-4">
-            <Image
-              src={Arrow.src}
-              alt="題目"
-              width={28}
-              height={28}
-              className="my-auto"
-            />
+            <div className="h-6 my-auto">
+              <Image src={Arrow.src} alt="題目" width={28} height={28} />
+            </div>
             <h3
               ref={content2Ref}
               id="content2"
@@ -519,13 +493,9 @@ const Article: NextPage = () => {
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-8">
-            <Image
-              src={Arrow.src}
-              alt="題目"
-              width={28}
-              height={28}
-              className="my-auto"
-            />
+            <div className="h-6 my-auto">
+              <Image src={Arrow.src} alt="題目" width={28} height={28} />
+            </div>
             <h3
               ref={content8Ref}
               id="content8"

@@ -56,13 +56,14 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <Image
-                      src={ArticleDecoration.src}
-                      alt="デコレーション"
-                      height={80}
-                      width={80}
-                      className="absolute right-0 bottom-0"
-                    />
+                    <div className="absolute right-0 -bottom-[6px]">
+                      <Image
+                        src={ArticleDecoration.src}
+                        alt="デコレーション"
+                        height={80}
+                        width={80}
+                      />
+                    </div>
                     <p className="text-[8px] text-gray-400 absolute mx-auto right-0 left-0 top-5">
                       {value.category}
                     </p>
@@ -78,13 +79,16 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <Image
-                      src={ArticleDecoration.src}
-                      alt="デコレーション"
-                      height={80}
-                      width={80}
-                      className="absolute right-0 bottom-0"
-                    />
+                    <div className="absolute right-0 -bottom-[6px]">
+                      <Image
+                        src={ArticleDecoration.src}
+                        alt="デコレーション"
+                        height={80}
+                        width={80}
+                        className="absolute right-0 bottom-0"
+                      />
+                    </div>
+
                     <p className="text-sm text-gray-400 absolute mx-auto right-0 left-0 top-5">
                       {value.category}
                     </p>
@@ -107,13 +111,15 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <Image
-                      src={ArticleDecoration.src}
-                      alt="デコレーション"
-                      height={80}
-                      width={80}
-                      className="absolute right-0 bottom-0"
-                    />
+                    <div className="absolute right-0 -bottom-[6px]">
+                      <Image
+                        src={ArticleDecoration.src}
+                        alt="デコレーション"
+                        height={80}
+                        width={80}
+                        className="absolute right-0 bottom-0"
+                      />
+                    </div>
                     <p className="text-[8px] text-gray-400 absolute mx-auto right-0 left-0 top-5">
                       {value.category}
                     </p>
@@ -129,13 +135,15 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <Image
-                      src={ArticleDecoration.src}
-                      alt="デコレーション"
-                      height={80}
-                      width={80}
-                      className="absolute right-0 bottom-0"
-                    />
+                    <div className="absolute right-0 -bottom-[6px]">
+                      <Image
+                        src={ArticleDecoration.src}
+                        alt="デコレーション"
+                        height={80}
+                        width={80}
+                      />
+                    </div>
+
                     <p className="text-sm text-gray-400 absolute mx-auto right-0 left-0 top-5">
                       {value.category}
                     </p>
