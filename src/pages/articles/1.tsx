@@ -332,8 +332,12 @@ const Article: NextPage = () => {
             <br />
             ではbodyタグの中に以下のコードを記述してみましょう。
           </p>
-          <div className="w-fit mx-auto my-12">
-            <Image src={Image7.src} alt="画像7" height={90} width={300} />
+          <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col my-4 mx-auto">
+            <span className="my-auto">&lt;body&gt;</span>
+            <span className="my-auto ml-6">
+              &lt;h1&gt;Hello world!&lt;/h1&gt;
+            </span>
+            <span className="my-auto">&lt;/body&gt;</span>
           </div>
           <p>
             <span className="px-2 py-1 rounded-md shadow-inner mr-1 bg-gray-50">
@@ -380,16 +384,37 @@ const Article: NextPage = () => {
             ではindex.htmlに戻り、titleタグ直上に以下のようにlinkタグを記述します。これにより同階層にあるstyle.cssをindex.htmlから呼び出すことができました。
             <br />
           </p>
-          <div className="w-fit my-12 mx-auto">
-            <Image src={Image9.src} alt="画像9" height={120} width={420} />
+          <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col my-4 mx-auto">
+            <span className="my-auto">
+              &lt;meta charset=&quot;UTF-8&quot; &gt;
+            </span>
+            <span className="my-auto">
+              &lt;http-equiv=&quot;X-UA-Compatible&quot;
+              content=&quot;IE=edge&quot; &gt;
+            </span>
+            <span className="my-auto">
+              &lt;meta name=&quot;viewport&quot;
+              content=&quot;width=device-width, initial-scale=1.0&quot; &gt;
+            </span>
+            <span className="my-auto text-yellow-300">
+              &lt;link rel=&quot;stylesheet&quot; href=&quot;./style.css&quot;
+              &gt;
+            </span>
+            <span className="my-auto">&lt;title&gt;Document&lt;/title&gt;</span>
           </div>
           <p>
             さらに既に書いたh1タグにclass属性を付与してあげます。このクラス名と同じ名前でstyles.cssに記述したスタイルがh1タグに当たります。ここでは
             <span className="text-blue-400">&quot; message &quot;</span>
             というクラス名をつけてみましょう。
           </p>
-          <div className="w-fit my-12 mx-auto">
-            <Image src={Image10.src} alt="画像10" height={20} width={320} />
+          <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col my-4 mx-auto">
+            <span className="my-auto">&lt;body&gt;</span>
+            <span className="my-auto ml-6">
+              &lt;h1{" "}
+              <span className="text-yellow-300">class=&quot;message&quot;</span>
+              &gt;Hello world!&lt;/h1&gt;
+            </span>
+            <span className="my-auto">&lt;/body&gt;</span>
           </div>
           <p>
             style.cssに先ほどのクラス名に対応した記述を書いていきます。以下のリンクからコードをコピーしてstyle.cssに貼り付けてみましょう。
