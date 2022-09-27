@@ -418,10 +418,10 @@ const Article: NextPage = () => {
           </div>
           <div className="flex flex-col mt-8">
             <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col">
-              <span className="my-auto">```</span>
+              <span className="my-auto">&#096;&#096;&#096;</span>
               <span className="my-auto ml-2">def main():</span>
-              <span className="my-auto ml-6">print('hoge')</span>
-              <span className="my-auto">```</span>
+              <span className="my-auto ml-6">print(&apos;hoge&apos;)</span>
+              <span className="my-auto">&#096;&#096;&#096;</span>
             </div>
             <div className="flex flex-col ml-4 mt-4">
               <span className="my-auto text-sm flex mb-1">
@@ -430,7 +430,7 @@ const Article: NextPage = () => {
               </span>
               <div className="text-sm my-auto ml-4 rounded-md py-2 px-4 w-min whitespace-nowrap shadow-inner flex flex-col">
                 <span className="my-auto ml-2">def main():</span>
-                <span className="my-auto ml-6">print('hoge')</span>
+                <span className="my-auto ml-6">print(&apos;hoge&apos;)</span>
               </div>
             </div>
           </div>
@@ -441,10 +441,10 @@ const Article: NextPage = () => {
               できます。
             </p>
             <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col mt-4">
-              <span className="my-auto">```python</span>
+              <span className="my-auto">&#096;&#096;&#096;python</span>
               <span className="my-auto ml-2">def main():</span>
-              <span className="my-auto ml-6">print('hoge')</span>
-              <span className="my-auto">```</span>
+              <span className="my-auto ml-6">print(&apos;hoge&apos;)</span>
+              <span className="my-auto">&#096;&#096;&#096;</span>
             </div>
             <div className="flex flex-col ml-4 mt-4">
               <span className="my-auto text-sm flex mb-1">
@@ -456,7 +456,7 @@ const Article: NextPage = () => {
                   def
                   <span className="my-auto ml-2 text-[#8bdf4c]">main():</span>
                 </span>
-                <span className="my-auto ml-6">print('hoge')</span>
+                <span className="my-auto ml-6">print(&apos;hoge&apos;)</span>
               </div>
             </div>
             <p className="mt-12">
@@ -470,10 +470,10 @@ const Article: NextPage = () => {
               と親切で読み手も理解が捗ります。以下のようにひと手間加えるだけで大丈夫です。
             </p>
             <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col mt-4">
-              <span className="my-auto">```python:main.py</span>
+              <span className="my-auto">&#096;&#096;&#096;python:main.py</span>
               <span className="my-auto ml-2">def main():</span>
-              <span className="my-auto ml-6">print('hoge')</span>
-              <span className="my-auto">```</span>
+              <span className="my-auto ml-6">print(&apos;hoge&apos;)</span>
+              <span className="my-auto">&#096;&#096;&#096;</span>
             </div>
             <div className="flex flex-col ml-4 mt-4">
               <span className="my-auto text-sm flex mb-1">
@@ -488,7 +488,7 @@ const Article: NextPage = () => {
                   def
                   <span className="my-auto ml-2 text-[#8bdf4c]">main():</span>
                 </span>
-                <span className="my-auto ml-6">print('hoge')</span>
+                <span className="my-auto ml-6">print(&apos;hoge&apos;)</span>
               </div>
             </div>
           </div>

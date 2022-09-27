@@ -385,7 +385,7 @@ const Article: NextPage = () => {
           </div>
           <p>
             さらに既に書いたh1タグにclass属性を付与してあげます。このクラス名と同じ名前でstyles.cssに記述したスタイルがh1タグに当たります。ここでは
-            <span className="text-blue-400">" message "</span>
+            <span className="text-blue-400">&quot; message &quot;</span>
             というクラス名をつけてみましょう。
           </p>
           <div className="w-fit my-12 mx-auto">

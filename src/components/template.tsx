@@ -610,7 +610,12 @@ export const Template = (props: Props) => {
                 </div>
                 <div className="flex gap-10 absolute -top-12 z-10">
                   {/* ここ */}
-                  <Image src={Hexagon.src} height={800} width={600} />
+                  <Image
+                    src={Hexagon.src}
+                    alt="六角形の背景"
+                    height={800}
+                    width={600}
+                  />
                 </div>
 
                 <div className="mx-auto">
@@ -654,7 +659,12 @@ export const Template = (props: Props) => {
                 <div className="fixed right-[16px] bg-gray-900 rounded-lg w-[16%] flex flex-col py-[20px] shadow-lg bottom-[40px] overflow-hidden">
                   <div className="flex gap-10 absolute -top-[60px] z-10">
                     <div className="h-[4000px] w-[340px] top-8 relative z-30">
-                      <Image src={Hexagon.src} height={1200} width={880} />
+                      <Image
+                        src={Hexagon.src}
+                        alt="六角形の背景"
+                        height={1200}
+                        width={880}
+                      />
                     </div>
                     <motion.div
                       transition={{
