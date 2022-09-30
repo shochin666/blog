@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -56,14 +55,13 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <div className="absolute right-0 -bottom-[6px]">
-                      <Image
-                        src={ArticleDecoration.src}
-                        alt="デコレーション"
-                        height={80}
-                        width={80}
-                      />
-                    </div>
+                    <img
+                      src={ArticleDecoration.src}
+                      alt="デコレーション"
+                      height={80}
+                      width={80}
+                      className="absolute right-0 bottom-0"
+                    />
                     <p className="text-[8px] text-gray-400 absolute mx-auto right-0 left-0 top-5">
                       {value.category}
                     </p>
@@ -79,15 +77,13 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <div className="absolute right-0 -bottom-[6px]">
-                      <Image
-                        src={ArticleDecoration.src}
-                        alt="デコレーション"
-                        height={80}
-                        width={80}
-                        className="absolute right-0 bottom-0"
-                      />
-                    </div>
+                    <img
+                      src={ArticleDecoration.src}
+                      alt="デコレーション"
+                      height={80}
+                      width={80}
+                      className="absolute right-0 bottom-0"
+                    />
 
                     <p className="text-sm text-gray-400 absolute mx-auto right-0 left-0 top-5">
                       {value.category}
@@ -111,15 +107,13 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <div className="absolute right-0 -bottom-[6px]">
-                      <Image
-                        src={ArticleDecoration.src}
-                        alt="デコレーション"
-                        height={80}
-                        width={80}
-                        className="absolute right-0 bottom-0"
-                      />
-                    </div>
+                    <img
+                      src={ArticleDecoration.src}
+                      alt="デコレーション"
+                      height={80}
+                      width={80}
+                      className="absolute right-0 bottom-0"
+                    />
                     <p className="text-[8px] text-gray-400 absolute mx-auto right-0 left-0 top-5">
                       {value.category}
                     </p>
@@ -135,14 +129,13 @@ const Home: NextPage = () => {
                       router.push(value.url);
                     }}
                   >
-                    <div className="absolute right-0 -bottom-[6px]">
-                      <Image
-                        src={ArticleDecoration.src}
-                        alt="デコレーション"
-                        height={80}
-                        width={80}
-                      />
-                    </div>
+                    <img
+                      src={ArticleDecoration.src}
+                      alt="デコレーション"
+                      height={80}
+                      width={80}
+                      className="absolute right-0 bottom-0"
+                    />
 
                     <p className="text-sm text-gray-400 absolute mx-auto right-0 left-0 top-5">
                       {value.category}

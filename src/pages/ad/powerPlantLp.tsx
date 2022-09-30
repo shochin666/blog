@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { NextPage } from "next";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
@@ -42,10 +41,10 @@ const PowerPlantLp: NextPage = () => {
         <div className="relative h-[2050px] lg:h-[2300px] text-white">
           <h1 className="absolute text-gray-800 lg:text-white font-extrabold z-30 left-4 lg:left-12 top-[30px] text-[20px] lg:text-[40px] flex">
             POWER PLANT APP
-            <Image
+            <img
               src={ThunderForTitle.src}
               alt="稲妻"
-              className="mx-auto animate-pulse lg:hidden -mt-[20px] "
+              className="mx-auto animate-pulse lg:hidden -mt-[20px]"
               height={40}
               width={40}
             />
@@ -72,7 +71,7 @@ const PowerPlantLp: NextPage = () => {
               height={50}
               className="mt-[24px] ml-[8px] lg:hidden"
             />
-            <Image
+            <img
               src={LpBack1.src}
               alt="PC版背景"
               width={2000}
@@ -103,7 +102,7 @@ const PowerPlantLp: NextPage = () => {
               className="flex flex-col lg:flex-row gap-8 items-center mx-auto"
             >
               <div className="flex flex-col lg:flex-row bg-white shadow-lg rounded-xl p-8 lg:p-20">
-                <Image
+                <img
                   src={Studying.src}
                   alt="勉強"
                   width={200}
@@ -154,7 +153,7 @@ const PowerPlantLp: NextPage = () => {
             <div className="font-normal text-white relative lg:hidden">
               <div className="flex justify-center h-[120px]">
                 <span className="absolute left-[8%] top-[20px] z-10">
-                  <Image
+                  <img
                     src={LeftBracket.src}
                     alt="左括弧"
                     height={20}
@@ -168,7 +167,7 @@ const PowerPlantLp: NextPage = () => {
                 </p>
 
                 <span className="absolute right-[8%] bottom-[22px]">
-                  <Image
+                  <img
                     src={RightBracket.src}
                     alt="右括弧"
                     height={20}
@@ -177,14 +176,14 @@ const PowerPlantLp: NextPage = () => {
                 </span>
               </div>
               <div className="flex flex-col absolute z-30 right-0 left-0 mx-auto top-[130px]">
-                <Image
+                <img
                   src={DownArrow.src}
                   alt="下向き矢印"
                   width={80}
                   height={80}
                   className="mx-auto"
                 />
-                <Image
+                <img
                   src={DownArrow.src}
                   alt="下向き矢印"
                   width={80}
@@ -193,7 +192,7 @@ const PowerPlantLp: NextPage = () => {
                 />
               </div>
               <div className="rounded-xl bg-gray-700 absolute px-1 py-4 mx-auto right-0 left-0 w-[95%] md:w-[50%] h-[260px] top-[200px]">
-                <Image
+                <img
                   src={Logo.src}
                   alt="ロゴ"
                   className="mx-auto animate-pulse"
@@ -222,7 +221,7 @@ const PowerPlantLp: NextPage = () => {
             <div className="font-normal mt-8 relative hidden lg:block">
               <div className="flex justify-center h-[160px]">
                 <span className="absolute left-[30%] top-[16px]">
-                  <Image
+                  <img
                     src={LeftBracket.src}
                     alt="左括弧"
                     height={32}
@@ -235,7 +234,7 @@ const PowerPlantLp: NextPage = () => {
                   が問題
                 </p>
                 <span className="absolute right-[30%] bottom-[80px]">
-                  <Image
+                  <img
                     src={RightBracket.src}
                     alt="右括弧"
                     height={32}
@@ -252,21 +251,21 @@ const PowerPlantLp: NextPage = () => {
             {/* モバイル版 */}
             <div className="lg:hidden mt-[320px]">
               <div className="mt-[100px] mb-[40px] flex overflow-x-scroll">
-                <Image
+                <img
                   alt="ヘルプ3"
                   src={MobileHelp3.src}
                   width={390}
                   height={400}
                   className="rounded-lg mx-auto mb-8 px-4 w-[520px] h-[500px]"
                 />
-                <Image
+                <img
                   alt="ヘルプ1"
                   src={MobileHelp1.src}
                   width={300}
                   height={400}
                   className="rounded-lg mx-auto mb-8 px-4 w-[520px] h-[500px]"
                 />
-                <Image
+                <img
                   alt="ヘルプ2"
                   src={MobileHelp2.src}
                   width={400}
@@ -288,7 +287,7 @@ const PowerPlantLp: NextPage = () => {
                 </Link>
                 <Link href="https://powerplant-f5557.web.app/">
                   <a className="text-[30px] text-blue-500">
-                    <Image src={Logo.src} alt="ロゴ" height={28} width={28} />
+                    <img src={Logo.src} alt="ロゴ" height={28} width={28} />
                   </a>
                 </Link>
               </div>
@@ -297,14 +296,14 @@ const PowerPlantLp: NextPage = () => {
             {/* PC版 */}
             <div className="hidden lg:block">
               <div className="flex flex-col mt-[40px] animate-bounce">
-                <Image
+                <img
                   src={DownArrow.src}
                   alt="下向き矢印"
                   width={80}
                   height={80}
                   className="mx-auto"
                 />
-                <Image
+                <img
                   src={DownArrow.src}
                   alt="下向き矢印"
                   width={80}
@@ -313,14 +312,14 @@ const PowerPlantLp: NextPage = () => {
                 />
               </div>
               <div className="mt-[80px] relative flex">
-                <Image
+                <img
                   alt="ヘルプ1"
                   src={Help1.src}
                   width={400}
                   height={650}
                   className="rounded-lg mx-auto absolute left-[24%]"
                 />
-                <Image
+                <img
                   alt="ヘルプ2"
                   src={Help2.src}
                   width={400}

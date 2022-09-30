@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import Image from "next/image";
 
 import { Link as Scroll } from "react-scroll";
 
@@ -53,15 +52,14 @@ const Article: NextPage = () => {
           <p className="absolute text-right text-gray-400 z-10 right-6 top-8">
             更新日 : 2022/9/19
           </p>
-          <div className="absolute right-0 z-0">
-            <Image
-              src={TitleBackground.src}
-              alt="背景"
-              height={150}
-              width={150}
-              className="absolute right-0 z-0"
-            />
-          </div>
+
+          <img
+            src={TitleBackground.src}
+            alt="背景"
+            height={150}
+            width={150}
+            className="absolute right-0 z-0"
+          />
         </div>
         <h2 className="text-gray-600 text-2xl sm:text-3xl mx-[20px]">目的</h2>
         <hr className="mx-[20px] mb-4" />
@@ -83,9 +81,13 @@ const Article: NextPage = () => {
         <hr className="mx-[20px] mb-4" />
         <div className="w-[90%] mx-auto text-gray-600 mb-32">
           <div className="flex sm:-ml-4 mt-8 mb-4">
-            <div className="h-6 my-auto">
-              <Image src={Arrow.src} alt="題目" width={28} height={28} />
-            </div>
+            <img
+              src={Arrow.src}
+              alt="題目"
+              width={28}
+              height={28}
+              className="h-6 my-auto"
+            />
             <h3
               ref={content1Ref}
               id="content1"
@@ -95,9 +97,13 @@ const Article: NextPage = () => {
             </h3>
           </div>
           <div className="flex my-8 h-12">
-            <div className="mr-4">
-              <Image src={LinkIcon.src} alt="リンク" height={48} width={4} />
-            </div>
+            <img
+              src={LinkIcon.src}
+              alt="リンク"
+              height={48}
+              width={4}
+              className="mr-4"
+            />
             <Link href="https://zero-plus.io/media/html-tags-and-usage/">
               <a
                 target="_blank"
@@ -120,9 +126,13 @@ const Article: NextPage = () => {
             初心者目線でわかりやすく書いてあるのでおすすめです！
           </p>
           <div className="flex my-8 h-12">
-            <div className="mr-4">
-              <Image src={LinkIcon.src} alt="リンク" height={48} width={4} />
-            </div>
+            <img
+              src={LinkIcon.src}
+              alt="リンク"
+              height={48}
+              width={4}
+              className="mr-4"
+            />
             <Link href="https://webukatu.com/wordpress/blog/5628/">
               <a
                 className="hover:underline my-auto text-[#009c3e]"
@@ -139,9 +149,13 @@ const Article: NextPage = () => {
             という方に向いてます！
           </p>
           <div className="flex my-8 h-12">
-            <div className="mr-4">
-              <Image src={LinkIcon.src} alt="リンク" height={48} width={4} />
-            </div>
+            <img
+              src={LinkIcon.src}
+              alt="リンク"
+              height={48}
+              width={4}
+              className="mr-4"
+            />
             <Link href="https://qiita.com/7note/items/988274920e28cb00fa25">
               <a
                 className="hover:underline my-auto text-[#009c3e]"
@@ -167,9 +181,13 @@ const Article: NextPage = () => {
             と個人的に思いました！
           </p>
           <div className="flex my-8 h-12">
-            <div className="mr-4">
-              <Image src={LinkIcon.src} alt="リンク" height={48} width={4} />
-            </div>
+            <img
+              src={LinkIcon.src}
+              alt="リンク"
+              height={48}
+              width={4}
+              className="mr-4"
+            />
             <Link href="https://yoshikawaweb.com/element/">
               <a
                 className="hover:underline my-auto text-[#009c3e]"
@@ -194,9 +212,13 @@ const Article: NextPage = () => {
             今後のエラー回避の予防として活躍してくれるおすすめのサイトです！
           </p>
           <div className="flex sm:-ml-4 mt-28 mb-4">
-            <div className="h-6 my-auto">
-              <Image src={Arrow.src} alt="題目" width={28} height={28} />
-            </div>
+            <img
+              src={Arrow.src}
+              alt="題目"
+              width={28}
+              height={28}
+              className="h-6 my-auto"
+            />
             <h3
               ref={content2Ref}
               id="content2"
@@ -206,9 +228,13 @@ const Article: NextPage = () => {
             </h3>
           </div>
           <div className="flex my-8 h-12">
-            <div className="mr-4">
-              <Image src={LinkIcon.src} alt="リンク" height={48} width={4} />
-            </div>
+            <img
+              src={LinkIcon.src}
+              alt="リンク"
+              height={48}
+              width={4}
+              className="mr-4"
+            />
             <Link href="https://webliker.info/material/html-css-super-beginner03/">
               <a
                 className="hover:underline my-auto text-[#009c3e]"
@@ -229,9 +255,13 @@ const Article: NextPage = () => {
             初心者にとって理解がかなり捗るかと思います！
           </p>
           <div className="flex my-8 h-12">
-            <div className="mr-4">
-              <Image src={LinkIcon.src} alt="リンク" height={48} width={4} />
-            </div>
+            <img
+              src={LinkIcon.src}
+              alt="リンク"
+              height={48}
+              width={4}
+              className="mr-4"
+            />
             <Link href="https://webliker.info/css/07370/">
               <a
                 className="hover:underline my-auto text-[#009c3e]"
@@ -252,9 +282,13 @@ const Article: NextPage = () => {
             実際に用いるコードと実行結果が横並びで記載されていてすぐに確認しながら学習を進められるようになっています。
           </p>
           <div className="flex my-8 h-12">
-            <div className="mr-4">
-              <Image src={LinkIcon.src} alt="リンク" height={48} width={4} />
-            </div>
+            <img
+              src={LinkIcon.src}
+              alt="リンク"
+              height={48}
+              width={4}
+              className="mr-4"
+            />
             <Link href="https://qiita.com/7note/items/c90ba916f23d29229ac4">
               <a
                 className="hover:underline my-auto text-[#009c3e]"
@@ -279,9 +313,13 @@ const Article: NextPage = () => {
             の姉妹編となります。同様に重要度別で並んでいるので学習の手助けになるかと思い参考にさせていただきました。
           </p>
           <div className="flex my-8 h-12">
-            <div className="mr-4">
-              <Image src={LinkIcon.src} alt="リンク" height={48} width={4} />
-            </div>
+            <img
+              src={LinkIcon.src}
+              alt="リンク"
+              height={48}
+              width={4}
+              className="mr-4"
+            />
             <Link href="https://developer.mozilla.org/ja/docs/Web/CSS/Reference">
               <a
                 className="hover:underline my-auto text-[#009c3e]"

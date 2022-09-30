@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Image from "next/image";
 import { ReactElement, ReactNode, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -84,7 +83,7 @@ export const Template = (props: Props) => {
               <div className="mt-4">
                 <Link href="/">
                   <a className="flex">
-                    <Image src={Logo.src} alt="背景" height={40} width={40} />
+                    <img src={Logo.src} alt="背景" height={40} width={40} />
                     <p className="font-bold text-2xl whitespace-nowrap bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent ml-2 sm:ml-4">
                       rev4 lab.
                     </p>
@@ -520,7 +519,7 @@ export const Template = (props: Props) => {
                 {/* PC版広告 */}
                 <div className="rounded-lg py-8 flex flex-col shadow-lg mt-8 mb-14 w-[90%]">
                   <div className="mx-auto z-20">
-                    <Image
+                    <img
                       src={PowerPlantLogo.src}
                       alt="ロゴ"
                       height={120}
@@ -553,7 +552,7 @@ export const Template = (props: Props) => {
                 <hr className="mx-[5px] sm:mx-[20px] sm:mb-12" />
                 <div className="mx-auto rounded-lg py-4 flex flex-col shadow-lg mt-8 mb-14 w-full bg-white">
                   <div className="mx-auto z-20">
-                    <Image
+                    <img
                       src={PowerPlantLogo.src}
                       alt="ロゴ"
                       height={120}
@@ -608,29 +607,30 @@ export const Template = (props: Props) => {
                     className="bg-blue-500 w-8 h-8 rounded-full z-20 absolute"
                   ></motion.div>
                 </div>
-                <div className="flex gap-10 absolute -top-12 z-10">
+                <div>
                   {/* ここ */}
-                  <Image
+                  <img
                     src={Hexagon.src}
                     alt="六角形の背景"
                     height={800}
                     width={600}
+                    className="flex gap-10 absolute -top-12 z-10"
                   />
                 </div>
 
                 <div className="mx-auto">
-                  <Image
+                  <img
                     src={Icon.src}
                     alt="アイコン"
                     height={120}
                     width={120}
-                    className="rounded-full mx-auto z-20"
+                    className="rounded-full relative mx-auto z-20"
                   />
                 </div>
-                <p className="text-[#79FFAF] mt-2 font-bold text-2xl text-center z-20">
+                <p className="text-[#79FFAF] mt-2 font-bold text-2xl text-center z-20 relative">
                   rev4
                 </p>
-                <p className="text-gray-400 text-sm mx-4 mt-4 z-20">
+                <p className="text-gray-400 text-sm mx-4 mt-4 z-20 relative">
                   物理学科に通う大学3年生。
                   <br />
                   フロントエンドをメインに個人開発しています。
@@ -658,14 +658,13 @@ export const Template = (props: Props) => {
               <div className="w-[18%] hidden sm:block">
                 <div className="fixed right-[16px] bg-gray-900 rounded-lg w-[16%] flex flex-col py-[20px] shadow-lg bottom-[40px] overflow-hidden">
                   <div className="flex gap-10 absolute -top-[60px] z-10">
-                    <div className="h-[4000px] w-[340px] top-8 relative z-30">
-                      <Image
-                        src={Hexagon.src}
-                        alt="六角形の背景"
-                        height={1200}
-                        width={880}
-                      />
-                    </div>
+                    <img
+                      src={Hexagon.src}
+                      alt="六角形の背景"
+                      height={1200}
+                      width={1100}
+                      className="h-[380px] w-[380px] top-8 relative z-30"
+                    />
                     <motion.div
                       transition={{
                         duration: 10,
@@ -698,18 +697,18 @@ export const Template = (props: Props) => {
                     {/* PC版 */}
                   </div>
                   <div className="mx-auto">
-                    <Image
+                    <img
                       src={Icon.src}
                       alt="アイコン"
                       height={120}
                       width={120}
-                      className="rounded-full mx-auto z-20"
+                      className="rounded-full mx-auto z-40 relative"
                     />
                   </div>
-                  <p className="text-[#79FFAF] mt-2 font-bold text-2xl text-center z-20">
+                  <p className="text-[#79FFAF] mt-2 font-bold text-2xl text-center relative z-20">
                     rev4
                   </p>
-                  <p className="text-gray-400 text-sm mx-4 mt-4 z-20">
+                  <p className="text-gray-400 text-sm mx-4 mt-4 relative z-20">
                     現在、物理学科に通う大学3年生。
                     <br />
                     PowerPlantを運営しており、フロントエンドをメインに個人開発しています。

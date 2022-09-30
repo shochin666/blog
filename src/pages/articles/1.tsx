@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import Image from "next/image";
 import { useRef } from "react";
 import { Template } from "../../components/Template";
 import { useOffsetTop } from "hooks/useOffsetTop";
@@ -90,14 +89,13 @@ const Article: NextPage = () => {
           <p className="absolute text-right text-gray-400 z-10 right-6 top-8">
             更新日 : 2022/9/15
           </p>
-          <div className="absolute right-0 z-0">
-            <Image
-              src={TitleBackground.src}
-              alt="背景"
-              height={150}
-              width={150}
-            />
-          </div>
+          <img
+            src={TitleBackground.src}
+            alt="背景"
+            height={150}
+            width={150}
+            className="absolute right-0 z-0"
+          />
         </div>
         <h2 className="text-gray-600 text-2xl sm:text-3xl mx-[20px]">
           環境構築
@@ -105,9 +103,13 @@ const Article: NextPage = () => {
         <hr className="mx-[20px] mb-4" />
         <div className="w-[90%] mx-auto text-gray-600">
           <div className="flex sm:-ml-4 mt-8 mb-4">
-            <div className="h-6 my-auto">
-              <Image src={Arrow.src} alt="題目" width={28} height={28} />
-            </div>
+            <img
+              src={Arrow.src}
+              alt="題目"
+              width={28}
+              height={28}
+              className="h-6 my-auto"
+            />
             <h3
               ref={content1Ref}
               id="content1"
@@ -124,9 +126,13 @@ const Article: NextPage = () => {
             以下のリンクをクリックしてダウンロードページに移動します。
           </p>
           <div className="flex my-8 h-12">
-            <div className="mr-4">
-              <Image src={LinkIcon.src} alt="リンク" height={48} width={4} />
-            </div>
+            <img
+              src={LinkIcon.src}
+              alt="リンク"
+              height={48}
+              width={4}
+              className="mr-4"
+            />
             <Link href="https://code.visualstudio.com/download">
               <a
                 target="_blank"
@@ -137,19 +143,26 @@ const Article: NextPage = () => {
               </a>
             </Link>
           </div>
-          <div className="mx-auto shadow-md my-12">
-            <Image src={Image1.src} alt="画像1" height={400} width={750} />
-          </div>
-
+          <img
+            src={Image1.src}
+            alt="画像1"
+            height={400}
+            width={750}
+            className="mx-auto shadow-md my-12"
+          />
           <p>
             多くの方はmacかwindowsのOSが搭載されたPCをお使いかと思います。自分のPCに合わせたパッケージをダウンロードしてください。(2022年9月時点で画像のバージョン)
             <br />
             ダウンロードしたパッケージを解凍してデスクトップにアプリを配置しておきましょう。
           </p>
           <div className="flex sm:-ml-4 mt-20 mb-4">
-            <div className="h-6 my-auto">
-              <Image src={Arrow.src} alt="題目" width={28} height={28} />
-            </div>
+            <img
+              src={Arrow.src}
+              alt="題目"
+              width={28}
+              height={28}
+              className="h-6 my-auto"
+            />
             <h3
               ref={content2Ref}
               id="content2"
@@ -170,7 +183,7 @@ const Article: NextPage = () => {
           <div className="hidden sm:block">
             <div className="flex justify-between w-[500px] mx-auto mt-12 mb-28">
               <div>
-                <Image
+                <img
                   src={Image2.src}
                   alt="画像2"
                   height={220}
@@ -179,14 +192,18 @@ const Article: NextPage = () => {
                 />
               </div>
               <TbArrowBigRightLine className="my-auto text-3xl text-green-400 animate-pulse" />
-              <div className="rounded-lg my-auto hidden sm:block">
-                <Image src={Image3.src} alt="画像3" height={100} width={80} />
-              </div>
+              <img
+                src={Image3.src}
+                alt="画像3"
+                height={100}
+                width={80}
+                className="rounded-lg my-auto hidden sm:block"
+              />
             </div>
           </div>
           <div className="sm:hidden">
             <div className="flex flex-col justify-between mx-auto mt-12 mb-28">
-              <Image
+              <img
                 src={Image2.src}
                 alt="画像2"
                 height={280}
@@ -194,15 +211,13 @@ const Article: NextPage = () => {
                 className="rounded-lg mx-auto"
               />
               <TbArrowBigDownLine className="my-8 mx-auto text-[40px] text-green-400 animate-pulse" />
-              <div className="mx-auto">
-                <Image
-                  src={Image3.src}
-                  alt="画像3"
-                  height={100}
-                  width={80}
-                  className="rounded-lg mx-auto"
-                />
-              </div>
+              <img
+                src={Image3.src}
+                alt="画像3"
+                height={100}
+                width={80}
+                className="rounded-lg mx-auto"
+              />
             </div>
           </div>
         </div>
@@ -212,9 +227,13 @@ const Article: NextPage = () => {
         <hr className="mx-[20px] mb-4" />
         <div className="w-[90%] mx-auto text-gray-600 mb-32">
           <div className="flex sm:-ml-4 mt-8 mb-4">
-            <div className="h-6 my-auto">
-              <Image src={Arrow.src} alt="題目" width={28} height={28} />
-            </div>
+            <img
+              src={Arrow.src}
+              alt="題目"
+              width={28}
+              height={28}
+              className="h-6 my-auto"
+            />
             <h3
               ref={content3Ref}
               id="content3"
@@ -232,9 +251,7 @@ const Article: NextPage = () => {
           </p>
           <div className="hidden sm:block">
             <div className="flex my-16">
-              <div>
-                <Image src={Image4.src} alt="画像4" height={280} width={56} />
-              </div>
+              <img src={Image4.src} alt="画像4" height={280} width={56} />
               <div className="flex flex-col py-4 px-8 justify-between">
                 <p>
                   vscodeの左側に左の画像のようなアイコンが複数表示されているので、拡張機能を選択します。
@@ -243,7 +260,7 @@ const Article: NextPage = () => {
                   と検索をかけると以下のプラグインが表示されるのでインストールしておきましょう。
                 </p>
                 <div>
-                  <Image
+                  <img
                     src={Image5.src}
                     alt="画像5"
                     height={160}
@@ -257,9 +274,7 @@ const Article: NextPage = () => {
           <div className="sm:hidden">
             <div className="flex flex-col my-16">
               <div className="flex py-4 justify-between">
-                <div>
-                  <Image src={Image4.src} alt="画像4" height={400} width={80} />
-                </div>
+                <img src={Image4.src} alt="画像4" height={200} width={40} />
                 <p className="mx-4 my-auto">
                   vscodeの左側に左の画像のようなアイコンが複数表示されているので、拡張機能を選択します。
                 </p>
@@ -269,22 +284,24 @@ const Article: NextPage = () => {
                   そして<span className="text-blue-400">Live Server</span>
                   と検索をかけると以下のプラグインが表示されるのでインストールしておきましょう。
                 </p>
-                <div>
-                  <Image
-                    src={Image5.src}
-                    alt="画像5"
-                    height={70}
-                    width={400}
-                    className="mx-auto rounded-lg mt-4"
-                  />
-                </div>
+                <img
+                  src={Image5.src}
+                  alt="画像5"
+                  height={70}
+                  width={400}
+                  className="mx-auto rounded-lg mt-4"
+                />
               </div>
             </div>
           </div>
           <div className="flex sm:-ml-4 mt-24 mb-4">
-            <div className="h-6 my-auto">
-              <Image src={Arrow.src} alt="題目" width={28} height={28} />
-            </div>
+            <img
+              src={Arrow.src}
+              alt="題目"
+              width={28}
+              height={28}
+              className="h-6 my-auto"
+            />
             <h3
               ref={content4Ref}
               id="content4"
@@ -303,9 +320,13 @@ const Article: NextPage = () => {
             <br />
             左上の表示が画像のようになっていれば完了です。
           </p>
-          <div className="mx-auto my-12 w-fit">
-            <Image src={Image6.src} alt="画像6" height={80} width={200} />
-          </div>
+          <img
+            src={Image6.src}
+            alt="画像6"
+            height={80}
+            width={200}
+            className="mx-auto my-12 w-fit"
+          />
           <p>
             準備が整ったところで、実際に index.html
             を選択してファイルを編集してみましょう。
@@ -313,9 +334,13 @@ const Article: NextPage = () => {
             以下のリンクからそのままコードをコピーして自分のindex.htmlに貼り付けてみてください。
           </p>
           <div className="flex my-8 h-12">
-            <div className="mr-4">
-              <Image src={LinkIcon.src} alt="リンク" height={48} width={4} />
-            </div>
+            <img
+              src={LinkIcon.src}
+              alt="リンク"
+              height={48}
+              width={4}
+              className="mr-4"
+            />
             <Link href="https://github.com/shochin666/demo/blob/main/index.html">
               <a
                 target="_blank"
@@ -332,7 +357,7 @@ const Article: NextPage = () => {
             <br />
             ではbodyタグの中に以下のコードを記述してみましょう。
           </p>
-          <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col my-4 mx-auto">
+          <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-full whitespace-normal flex flex-col my-4 mx-auto">
             <span className="my-auto">&lt;body&gt;</span>
             <span className="my-auto ml-6">
               &lt;h1&gt;Hello world!&lt;/h1&gt;
@@ -359,16 +384,20 @@ const Article: NextPage = () => {
             </span>
             が表示されます。
           </p>
-          <div className="w-fit shadow-md mx-auto mt-12 mb-20">
-            <Image src={Image8.src} alt="画像8" height={380} width={600} />
-          </div>
+          <img
+            src={Image8.src}
+            alt="画像8"
+            height={380}
+            width={600}
+            className="w-fit shadow-md mx-auto mt-12 mb-20"
+          />
           <div className="flex sm:-ml-4 mt-24 mb-4">
-            <Image
+            <img
               src={Arrow.src}
               alt="題目"
               width={28}
               height={28}
-              className="my-auto"
+              className="my-auto h-6"
             />
             <h3
               ref={content5Ref}
@@ -384,7 +413,7 @@ const Article: NextPage = () => {
             ではindex.htmlに戻り、titleタグ直上に以下のようにlinkタグを記述します。これにより同階層にあるstyle.cssをindex.htmlから呼び出すことができました。
             <br />
           </p>
-          <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col my-4 mx-auto">
+          <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-full flex flex-col my-4 mx-auto overflow-x-scroll whitespace-nowrap">
             <span className="my-auto">
               &lt;meta charset=&quot;UTF-8&quot; &gt;
             </span>
@@ -407,10 +436,10 @@ const Article: NextPage = () => {
             <span className="text-blue-400">&quot; message &quot;</span>
             というクラス名をつけてみましょう。
           </p>
-          <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-min whitespace-nowrap flex flex-col my-4 mx-auto">
+          <div className="bg-gray-900 text-gray-300 rounded-md py-2 px-4 w-full whitespace-nowrap flex flex-col my-4 mx-auto overflow-x-scroll">
             <span className="my-auto">&lt;body&gt;</span>
             <span className="my-auto ml-6">
-              &lt;h1{" "}
+              &lt;h1
               <span className="text-yellow-300">class=&quot;message&quot;</span>
               &gt;Hello world!&lt;/h1&gt;
             </span>
@@ -420,9 +449,13 @@ const Article: NextPage = () => {
             style.cssに先ほどのクラス名に対応した記述を書いていきます。以下のリンクからコードをコピーしてstyle.cssに貼り付けてみましょう。
           </p>
           <div className="flex my-8 h-12">
-            <div className="mr-4">
-              <Image src={LinkIcon.src} alt="リンク" height={48} width={4} />
-            </div>
+            <img
+              src={LinkIcon.src}
+              alt="リンク"
+              height={48}
+              width={4}
+              className="mr-4"
+            />
             <Link href="https://github.com/shochin666/demo/blob/main/style.css">
               <a
                 target="_blank"
@@ -438,7 +471,7 @@ const Article: NextPage = () => {
           </span>
           で保存してブラウザをリロードしてみましょう。無事にHTMLファイルにスタイルが当たって文字の色が変わって表示されました!!
           <div className="w-fit shadow-md mx-auto my-12">
-            <Image src={Image11.src} alt="画像11" height={380} width={620} />
+            <img src={Image11.src} alt="画像11" height={380} width={620} />
           </div>
           <p>
             これでHTMLファイル作成からCSSを当てて表示することができました。おめでとうございます!!
@@ -454,7 +487,7 @@ const Article: NextPage = () => {
           </p>
           <p>これにて今回の記事は終了となります。お疲れ様でした!!</p>
           <div className="w-fit mx-auto mt-8">
-            <Image src={Success.src} alt="成功" height={200} width={280} />
+            <img src={Success.src} alt="成功" height={200} width={280} />
           </div>
           <p className="text-[#00c34e] text-3xl font-bold text-center">
             Success!
