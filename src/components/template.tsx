@@ -41,6 +41,11 @@ export const tmplist: hoge[] = [
     category: "Markdown",
     url: "/articles/3",
   },
+  {
+    title: "コンパイラ型 vs インタプリタ型",
+    category: "Knowledge",
+    url: "/articles/4",
+  },
 ];
 
 export const tryTmplist: hoge[] = [
