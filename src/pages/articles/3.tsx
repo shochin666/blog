@@ -14,6 +14,7 @@ import LinkIcon from "../../../public/linkIcon.png";
 import TitleBackground from "../../../public/titleBackground.png";
 import Arrow from "../../../public/Arrow.png";
 import { ReturnButton } from "components/ReturnButton";
+import Head from "next/head";
 
 const Article: NextPage = () => {
   const content1Ref = useRef(null);
@@ -35,6 +36,24 @@ const Article: NextPage = () => {
   return (
     <Template>
       <>
+        <Head>
+          <title>
+            rev4 lab.|これだけは知っておいてほしい！マークダウン記法まとめ
+          </title>
+          <meta
+            name="description"
+            content="これだけは知っておいてほしい！マークダウン記法まとめ"
+          />
+          <meta
+            name="keyword"
+            content="rev4, ブログ, HTML, CSS, react, プログラミング, 初心者, Markdown, マークダウン"
+          />
+          <meta property="twitter:title" content="rev4 lab." />
+          <meta name="twitter:createor" content="rev4" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:description" content="rev4の日常ブログ" />
+          <link rel="icon" href={Logo.src} />
+        </Head>
         <nav className="fixed h-[360px] right-[16px] top-12 z-20 flex-col mx-auto py-2 w-60 gap-2.5 rounded-lg px-4 hidden sm:flex">
           <p className="font-bold text-gray-500">目次</p>
           <Scroll

@@ -332,7 +332,7 @@ const PowerPlantLp: NextPage = () => {
             {/* PC版 */}
             <button
               onClick={() => {
-                router.push("/");
+                router.push("https://powerplant-f5557.web.app/");
               }}
               className="hidden lg:block rounded-lg py-4 bg-gradient-to-r bg-yellow-400  text-white shadow-lg fixed w-[90%] mx-auto right-0 left-0 bottom-[20px] text-[18px]"
             >

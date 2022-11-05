@@ -46,6 +46,11 @@ export const tmplist: hoge[] = [
     category: "Knowledge",
     url: "/articles/4",
   },
+  {
+    title: "浅いが秒で理解できるDX",
+    category: "Knowledge",
+    url: "/articles/5",
+  },
 ];
 
 export const tryTmplist: hoge[] = [

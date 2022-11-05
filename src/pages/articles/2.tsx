@@ -5,12 +5,14 @@ import { Link as Scroll } from "react-scroll";
 import { Template } from "../../components/Template";
 import { ReturnButton } from "components/ReturnButton";
 
+import Logo from "../../../public/logo.png";
 import LinkIcon from "../../../public/linkIcon.png";
 import TitleBackground from "../../../public/titleBackground.png";
 import Arrow from "../../../public/Arrow.png";
 import { useRef } from "react";
 import { useOffsetTop } from "hooks/useOffsetTop";
 import Link from "next/link";
+import Head from "next/head";
 
 const Article: NextPage = () => {
   const content1Ref = useRef(null);
@@ -26,6 +28,19 @@ const Article: NextPage = () => {
   return (
     <Template>
       <>
+        <Head>
+          <title>rev4 lab.|HTML・CSSをさらに深く理解する</title>
+          <meta name="description" content="HTML・CSSをさらに深く理解する" />
+          <meta
+            name="keyword"
+            content="rev4, ブログ, HTML, CSS, react, プログラミング, 初心者"
+          />
+          <meta property="twitter:title" content="rev4 lab." />
+          <meta name="twitter:createor" content="rev4" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:description" content="rev4の日常ブログ" />
+          <link rel="icon" href={Logo.src} />
+        </Head>
         <nav className="fixed h-[360px] right-[16px] top-12 z-20 flex-col mx-auto py-2 w-20 sm:w-60 gap-4 rounded-lg px-4 hidden sm:flex">
           <p className="font-bold text-gray-500">目次</p>
           <Scroll

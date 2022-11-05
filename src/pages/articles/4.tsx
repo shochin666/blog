@@ -6,6 +6,7 @@ import { useOffsetTop } from "hooks/useOffsetTop";
 
 import { Link as Scroll } from "react-scroll";
 
+import Logo from "../../../public/logo.png";
 import WorkFlow from "../../../public/article4/WorkFlow.png";
 import WorkFlowMobile from "../../../public/article4/WorkFlowMobile.png";
 import WorkFlow2 from "../../../public/article4/WorkFlow2.png";
@@ -14,6 +15,7 @@ import LinkIcon from "../../../public/linkIcon.png";
 import TitleBackground from "../../../public/titleBackground.png";
 import { ReturnButton } from "components/ReturnButton";
 import Link from "next/link";
+import Head from "next/head";
 
 const Article: NextPage = () => {
   const content1Ref = useRef(null);
@@ -24,6 +26,19 @@ const Article: NextPage = () => {
   return (
     <Template>
       <>
+        <Head>
+          <title>rev4 lab.|コンパイラ型 vs インタプリタ型</title>
+          <meta name="description" content="コンパイラ型 vs インタプリタ型" />
+          <meta
+            name="keyword"
+            content="rev4, ブログ, HTML, CSS, react, プログラミング, 初心者, コンパイラ型, コンパイラ, インタプリタ型, インタプリタ"
+          />
+          <meta property="twitter:title" content="rev4 lab." />
+          <meta name="twitter:createor" content="rev4" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:description" content="rev4の日常ブログ" />
+          <link rel="icon" href={Logo.src} />
+        </Head>
         <nav className="fixed h-[360px] right-[16px] top-12 z-20 flex-col mx-auto py-2 w-60 gap-2.5 rounded-lg px-4 hidden sm:flex">
           <p className="font-bold text-gray-500">目次</p>
           <Scroll
