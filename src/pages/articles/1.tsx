@@ -10,6 +10,7 @@ import { AiOutlineStop } from "react-icons/ai";
 import LinkIcon from "../../../public/linkIcon.png";
 import TitleBackground from "../../../public/titleBackground.png";
 import Arrow from "../../../public/Arrow.png";
+import Logo from "../../../public/logo.png";
 import Success from "../../../public/article1/undraw_game_day_ucx9.png";
 import Image1 from "../../../public/article1/Image1.png";
 import Image2 from "../../../public/article1/Image2.png";
@@ -17,13 +18,11 @@ import Image3 from "../../../public/article1/Image3.png";
 import Image4 from "../../../public/article1/Image4.png";
 import Image5 from "../../../public/article1/Image5.png";
 import Image6 from "../../../public/article1/Image6.png";
-import Image7 from "../../../public/article1/Image7.png";
 import Image8 from "../../../public/article1/Image8.png";
-import Image9 from "../../../public/article1/Image9.png";
-import Image10 from "../../../public/article1/Image10.png";
 import Image11 from "../../../public/article1/Image11.png";
 import { ReturnButton } from "components/ReturnButton";
 import Link from "next/link";
+import Head from "next/head";
 
 const Article: NextPage = () => {
   const content1Ref = useRef(null);
@@ -39,6 +38,19 @@ const Article: NextPage = () => {
   return (
     <Template>
       <>
+        <Head>
+          <title>rev4 lab.|HTML・CSSをさらに深く理解する</title>
+          <meta name="description" content="HTML・CSSをさらに深く理解する" />
+          <meta
+            name="keyword"
+            content="rev4, ブログ, HTML, CSS, react, プログラミング, 初心者"
+          />
+          <meta property="twitter:title" content="rev4 lab." />
+          <meta name="twitter:createor" content="rev4" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:description" content="rev4の日常ブログ" />
+          <link rel="icon" href={Logo.src} />
+        </Head>
         <nav className="fixed h-[360px] right-[16px] top-12 z-20 flex-col mx-auto py-2 w-60 gap-4 rounded-lg px-4 hidden sm:flex">
           <p className="font-bold text-gray-500">目次</p>
           <Scroll
