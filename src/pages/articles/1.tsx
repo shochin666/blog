@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { useRef } from "react";
-import { Template } from "../../components/template";
+import { Template } from "../../components/Template";
 import { useOffsetTop } from "hooks/useOffsetTop";
 
 import { Link as Scroll } from "react-scroll";

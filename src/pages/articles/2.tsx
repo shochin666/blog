@@ -2,7 +2,7 @@ import { NextPage } from "next";
 
 import { Link as Scroll } from "react-scroll";
 
-import { Template } from "../../components/template";
+import { Template } from "../../components/Template";
 import { ReturnButton } from "components/ReturnButton";
 
 import Logo from "../../../public/logo.png";
