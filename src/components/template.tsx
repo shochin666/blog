@@ -27,7 +27,7 @@ type Props = {
 
 export const tmplist: hoge[] = [
   {
-    title: "[初心者向け]HTML・CSS作成からLive Serverの立ち上げ",
+    title: "HTML・CSS作成からLive Serverの立ち上げ",
     category: "HTML CSS",
     url: "/articles/1",
   },
@@ -41,6 +41,11 @@ export const tmplist: hoge[] = [
     category: "Markdown",
     url: "/articles/3",
   },
+];
+
+export const tryTmplist: hoge[] = [];
+
+export const knowledgeTmplist: hoge[] = [
   {
     title: "コンパイラ型 vs インタプリタ型",
     category: "Knowledge",
@@ -51,14 +56,6 @@ export const tmplist: hoge[] = [
     category: "Knowledge",
     url: "/articles/5",
   },
-];
-
-export const tryTmplist: hoge[] = [
-  // {
-  //   title: "blenderを試してみた",
-  //   category: "blender",
-  //   url: "/try/1",
-  // },
 ];
 
 export const Template = (props: Props) => {
@@ -76,13 +73,8 @@ export const Template = (props: Props) => {
         />
         <meta property="twitter:title" content="rev4 lab." />
         <meta name="twitter:createor" content="rev4" />
-        {/* <meta
-          property="twitter:image"
-          content="https://powerplant-f5557.web.app/TwitterLogo.png"
-        /> */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:description" content="rev4の日常ブログ" />
-        {/* <link rel="canonical" href="https://powerplant-f5557.web.app/" /> */}
         <link rel="icon" href={Logo.src} />
       </Head>
 

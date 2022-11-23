@@ -101,7 +101,7 @@ const PowerPlantLp: NextPage = () => {
               }}
               className="flex flex-col lg:flex-row gap-8 items-center mx-auto"
             >
-              <div className="flex flex-col lg:flex-row bg-white shadow-lg rounded-xl p-8 lg:p-20">
+              <div className="flex flex-col lg:flex-row bg-white shadow-lg rounded-xl p-8 lg:p-20 lg:-mt-8">
                 <img
                   src={Studying.src}
                   alt="勉強"
