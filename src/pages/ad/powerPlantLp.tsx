@@ -136,10 +136,11 @@ const PowerPlantLp: NextPage = () => {
                   て <br /> 資格の勉強なんてやる暇ない！ <br />
                 </p>
                 <p>
-                  全然バイト入る暇なくて金銭的に
+                  全然バイト入る暇なくて
                   <span className="text-orange-400 font-bold text-[24px] whitespace-nowrap">
-                    詰み！
+                    金銭的
                   </span>
+                  に詰み！
                 </p>
               </div>
               <p className="text-[16px] lg:text-gray-600 mt-[20px] lg:mt-8 lg:ml-40 text-gray-400">
@@ -210,7 +211,7 @@ const PowerPlantLp: NextPage = () => {
                 </p>
                 <button
                   onClick={() => {
-                    router.push("/");
+                    router.push("https://powerplant-f5557.web.app/");
                   }}
                   className="lg:hidden rounded-lg py-4 bg-gradient-to-r bg-yellow-400 text-white shadow-xl w-[90%] text-[18px] right-0 left-0 mx-auto absolute bottom-4"
                 >

@@ -12,6 +12,7 @@ import { GiSnowman } from "react-icons/gi";
 import PowerPlantLogo from "../../public/PowerPlantLogo.png";
 import Icon from "../../public/Icon.jpeg";
 import Logo from "../../public/logo.png";
+import Moji from "../../public/moji.png";
 import Hexagon from "../../public/hexagon.png";
 import styles from "../styles/index.module.css";
 
@@ -56,6 +57,11 @@ export const knowledgeTmplist: hoge[] = [
     category: "Knowledge",
     url: "/articles/5",
   },
+  // {
+  //   title: "エアリズムとの契約解除?!ついにヒートテックと新規契約か...",
+  //   category: "Daily",
+  //   url: "/articles/6",
+  // },
 ];
 
 export const Template = (props: Props) => {
@@ -517,9 +523,9 @@ export const Template = (props: Props) => {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row mx-[20px]">
-              <div className="h-screen w-[18%] hidden sm:block pt-40">
+              <div className="h-screen w-[18%] hidden sm:block pt-20">
                 {/* PC版広告 */}
-                <div className="rounded-lg py-8 flex flex-col shadow-lg mt-8 mb-14 w-[90%]">
+                <div className="rounded-lg py-8 flex flex-col shadow-lg mb-14 w-[90%]">
                   <div className="mx-auto z-20">
                     <img
                       src={PowerPlantLogo.src}
@@ -543,6 +549,47 @@ export const Template = (props: Props) => {
                     見てみる
                   </button>
                 </div>
+                <div className="rounded-lg py-8 flex flex-col shadow-lg mt-8 mb-14 w-[90%] bg-[url('../../public/mojiBase.png')] bg-center">
+                  <div className="mx-auto z-20">
+                    <img src={Moji.src} alt="ロゴ" height={120} width={140} />
+                  </div>
+                  <p className="text-gray-500 mt-2 font-bold text-lg text-center z-20">
+                    MOJIMOJI
+                  </p>
+                  <p className="text-gray-400 text-sm mx-4 my-4 z-20">
+                    ES作成を全面サポートしてくれる神サイト
+                  </p>
+                  <button
+                    onClick={() => {
+                      router.push("https://mojimoji-f7149.web.app/");
+                    }}
+                    className="mx-[5%] text-white bg-sky-400 rounded-md py-2 px-full hover:bg-blue-400 duration-150"
+                  >
+                    見てみる
+                  </button>
+                </div>
+                {/* <div className="mx-auto rounded-lg py-4 flex flex-col shadow-lg mt-8 mb-14 w-full bg-[url('../../public/mojiBase.png')] bg-center">
+                  <div className="mx-auto z-20">
+                    <img src={Moji.src} alt="ロゴ" height={120} width={120} />
+                  </div>
+
+                  <p className="text-gray-500 mt-2 font-bold text-lg text-center z-20">
+                    MOJIMOJI
+                  </p>
+                  <p className="text-gray-200 text-sm text-center my-4 z-20">
+                    [就活生待望]
+                    <br />
+                    ES作成を全面サポートしてくれる神サイト
+                  </p>
+                  <button
+                    onClick={() => {
+                      router.push("https://mojimoji-f7149.web.app/");
+                    }}
+                    className="mx-[5%] text-white bg-sky-400 rounded-md py-4 px-full hover:bg-blue-400 duration-150"
+                  >
+                    見てみる
+                  </button>
+                </div> */}
               </div>
               <div className="w-full sm:w-[64%] sm:shadow-md relative z-30">
                 {children}
@@ -571,6 +618,28 @@ export const Template = (props: Props) => {
                   <button
                     onClick={() => {
                       router.push("/ad/powerPlantLp");
+                    }}
+                    className="mx-[5%] text-white bg-sky-400 rounded-md py-4 px-full hover:bg-blue-400 duration-150"
+                  >
+                    見てみる
+                  </button>
+                </div>
+                <div className="mx-auto rounded-lg py-4 flex flex-col shadow-lg mt-8 mb-14 w-full bg-[url('../../public/mojiBase.png')] bg-center">
+                  <div className="mx-auto z-20">
+                    <img src={Moji.src} alt="ロゴ" height={120} width={120} />
+                  </div>
+
+                  <p className="text-gray-500 mt-2 font-bold text-lg text-center z-20">
+                    MOJIMOJI
+                  </p>
+                  <p className="text-gray-200 text-sm text-center my-4 z-20">
+                    [就活生待望]
+                    <br />
+                    ES作成を全面サポートしてくれる神サイト
+                  </p>
+                  <button
+                    onClick={() => {
+                      router.push("https://mojimoji-f7149.web.app/");
                     }}
                     className="mx-[5%] text-white bg-sky-400 rounded-md py-4 px-full hover:bg-blue-400 duration-150"
                   >
